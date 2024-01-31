@@ -1,21 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-#remarks1,#remarks2,#remarks3, #remarks4 {
+#remarks1,#remarks2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 72px;
+    font-size: 18px;
     color: black;
     text-transform: uppercase;
-    text-align: center;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+#remarks2 {
+    position: relative;
+    top: -15px; 
+    background-color: #fff;
+    display: inline-block;
+    padding: 0 10px; 
 }
 
 #remarks {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 10px;
     font-size: 72px;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
 }
 
 #greeting1, #greeting2, #greeting3, #greeting4 {
@@ -39,12 +46,6 @@ body {
     display: flex;
 }
 
-#intro,#intro1,#intro2,#intro3,#intro4 {
-    text-align: center;
-    font-size: 42px;
-    padding: 3%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
 div.nav-bar{
     height: 30px;
@@ -208,6 +209,7 @@ div p {
       /* padding: 10px; */
         width: 100vmax;
         left: -10px;
+        background-color: #743A36;
         position: absolute;
 }
 
@@ -221,4 +223,12 @@ body {
 
 .p-desc {
     text-align: justify;
+}
+
+.project {
+    margin-left: 20px;
+}
+
+.card-img-top {
+    padding: 10px;
 }

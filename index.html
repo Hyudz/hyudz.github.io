@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/de52212229.js" crossorigin="anonymous"></script>
-    <title>Landing Page</title>
+    <title>Hyudz</title>
+    <link rel="icon" href="projects/fav.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
@@ -30,47 +31,74 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Projects</a>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aboutMe">About Me</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="flex-content">
-        <section id="home" class="contents">
-            <div id="greeting">
-                <p id="remarks">Hello! I'm <span style="color: #743A36;">Fraion Hyudz</span>, a BSIT Student</p>
+    <div class="container mt-5"></div>
+
+    <div class="container-fluid">
+        <section id="home" class="contents mb-5">
+            <div class="container-fluid d-flex">
+
+                <div id="greeting">
+                    <div class="container mt-5"></div>
+                    <div class="container mt-5"></div>
+                    <p style="text-align: justify;">Hello! I'm <span style="color: #743A36;">Fraion Hyudz Esguerra</span>, a BSIT Student
+                    a dedicated student who wants to pursue a software developer/game developer and I specialize in back end development and everyday I try my best to be good and improve my skills in coding.</p>
+                </div>
+
+                <div>
+                    <img id="pfp" src="pfp.jpg" style=" width: 18vmax; height: 18vmax;" alt="profile picture"></img>
+                </div>
             </div>
-            <image id="pfp" src="pfp.jpg" alt="profile picture"></image>
         </section>
 
-        <section id="services" class="contents">
+        <div class=" container">
+            <div class="row mt-5 mb-5"></div>
+        </div>
+
+        <section id="services" class="contents mt-5">
             <div class="title">
                 <p id="remarks1">Services</p>
             </div>
             
-            <div class="grid-container">
-                <div class="card">
-                    <div class="container">
-                        <h4 class="service"><b>Back End Developer</b></h4>
-                        <p>Unlocking the power behind seamless digital experiences, I specialize in back-end development. From architecting robust server-side solutions to optimizing database performance, I am dedicated to creating the backbone that ensures your applications run smoothly and efficiently.</p>
+            <div class="container w-75">
+                <div class="row">
+                    <div class="card col">
+                        <div class="container">
+                            <img src="https://placehold.co/600x400?text=Placeholder" alt="placeholder" class="img-fluid p-3">
+                            <h4 class="service"><b>Back End Developer</b></h4>
+                            <p>Unlocking the power behind seamless digital experiences, I specialize in back-end development. From architecting robust server-side solutions to optimizing database performance, I am dedicated to creating the backbone that ensures your applications run smoothly and efficiently.</p>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="card">
-                    <div class="container">
-                        <h4 class="service"><b>Mobile Game Developer</b></h4>
-                        <p>Transforming ideas into interactive and captivating mobile games is my expertise. With a passion for innovation, I bring your gaming visions to life, combining cutting-edge technology with creative flair to deliver engaging and immersive experiences on mobile platforms.</p>
+        
+                    <div class="card col">
+                        <div class="container">
+                            <img src="https://placehold.co/600x400?text=Placeholder" alt="placeholder" class="img-fluid p-3">
+                            <h4 class="service"><b>Mobile Game Developer</b></h4>
+                            <p>Transforming ideas into interactive and captivating mobile games is my expertise. With a passion for innovation, I bring your gaming visions to life, combining cutting-edge technology with creative flair to deliver engaging and immersive experiences on mobile platforms.</p>
+                        </div>
+                        
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="container">
-                        <h4 class="service"><b>Database Manager</b></h4>
-                        <p>In the world of data, precision is paramount. As a skilled database manager, I organize, secure, and optimize your data infrastructure. From designing database schemas to implementing efficient querying, I ensure your data is not just stored but serves as a strategic asset for your business.</p>
+                <div class="row">
+                    <div class="card col">
+                        <div class="container">
+                            <img src="https://placehold.co/600x400?text=Placeholder" alt="placeholder" class="img-fluid p-3">
+                            <h4 class="service"><b>Database Manager</b></h4>
+                            <p>In the world of data, precision is paramount. As a skilled database manager, I organize, secure, and optimize your data infrastructure. From designing database schemas to implementing efficient querying, I ensure your data is not just stored but serves as a strategic asset for your business.</p>
+                        </div>
+                    </div>
+
+                    <div class="card col">
+                        <div class="container">
+                            <img src="https://placehold.co/600x400?text=Placeholder" alt="placeholder" class="img-fluid p-3">
+                            <h4 class="service"><b>Layout Artist</b></h4>
+                            <p>Creative and detail-oriented layout artist proficient in both Photoshop and Canva, adept at transforming concepts into visually stunning designs. With a keen eye for aesthetics and a passion for storytelling through visuals, I bring a unique blend of technical skill and artistic flair to elevate any project.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,74 +110,81 @@
             </div>
 
             <div class="project-container">
-                <div class="projects d-flex">
-                    <div class="card" style="width: 18rem;">
-                        <img src="projects/proj1.png" class="card-img-top" alt="Enrollment System">
-                        <div class="card-body">
-                            <h5 class="card-title">Enrollment System for Freshmen</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">November 2022</h6>
-                            <p class="card-text" style="text-align: justify;">An enrollment system made using Python during our first semester. It can create, read, update, delete, and save data but this doesn’t have any database applied.</p>
+                <div class="projects container">
+                    <div class="row">
+                        <div class="card col-sm ms-3 me-3" style="width: 18rem;">
+                            <img src="projects/proj1.png" class="card-img-top img-fluid" alt="Enrollment System">
+                            <div class="card-body">
+                                <h5 class="card-title">Enrollment System for Freshmen</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">November 2022</h6>
+                                <p class="card-text" style="text-align: justify;">An enrollment system made using Python during our first semester. It can create, read, update, delete, and save data but this doesn’t have any database applied.</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-sm ms-3 me-3" style="width: 18rem;">
+                            <img src="projects/proj2.png" class="card-img-top img-fluid" alt="Ropersors Java Game">
+                            <div class="card-body">
+                                <h5 class="card-title">Ropersors</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">March 2023 - April 2023</h6>
+                                <p class="card-text" style="text-align: justify;">A RPS-based game using Java that incorporates elements such as fire, water, and flora(nature) to add another layer of fun to the game. The players will be granted 10 lives at the start of each game, and it will then be decremented depending on the outcomes of each round. For each round, the players will choose among the objects (R,P,S). Then the program will randomly affix a randomized element to imbue their chosen object to raise the odds while preserving the fairness of the game.</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-sm ms-3 me-3"style="width: 18rem;">
+                            <img src="projects/pitique.png" class="card-img-top img-fluid" alt="Pitique">
+                            <div class="card-body">
+                                <h5 class="card-title">Pitique</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">March 2023 - April 2023</h6>
+                                <p class="card-text" style="text-align: justify;">Pitique is a a photography website consisting of various pictures, ranging from the day-to-day college life to the mesmerizing sceneries of our nature. Our team aims to create a hub for photography enthusiasts and for others to gain an interest and appreciate the art of photography.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card" style="width: 18rem;">
-                        <img src="projects/proj2.png" class="card-img-top" alt="Enrollment System">
-                        <div class="card-body">
-                            <h5 class="card-title">Ropersors</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">March 2023 - April 2023</h6>
-                            <p class="card-text" style="text-align: justify;">A RPS-based game using Java that incorporates elements such as fire, water, and flora(nature) to add another layer of fun to the game. The players will be granted 10 lives at the start of each game, and it will then be decremented depending on the outcomes of each round. For each round, the players will choose among the objects (R,P,S). Then the program will randomly affix a randomized element to imbue their chosen object to raise the odds while preserving the fairness of the game.</p>
-                        </div>
-                    </div>
+                    <div class="row">
 
-                    <div class="card" style="width: 18rem;">
-                        <img src="projects/pitique.png" class="card-img-top" alt="Enrollment System">
-                        <div class="card-body">
-                            <h5 class="card-title">Pitique</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">March 2023 - April 2023</h6>
-                            <p class="card-text" style="text-align: justify;">Pitique is a a photography website consisting of various pictures, ranging from the day-to-day college life to the mesmerizing sceneries of our nature. Our team aims to create a hub for photography enthusiasts and for others to gain an interest and appreciate the art of photography.</p>
+                        <div class="card col-sm ms-3 me-3" style="width: 18rem;">
+                            <img src="projects/rps mobile.jpg" class="card-img-top img-fluid" alt="Ropersors Mobile">
+                            <div class="card-body">
+                                <h5 class="card-title">Ropersors Mobile</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">May 2023</h6>
+                                <p class="card-text" style="text-align: justify;">A mobile version of Ropersors Java Game</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card" style="width: 18rem;">
-                        <img src="projects/afterworld.webp" class="card-img-top" alt="Enrollment System">
-                        <div class="card-body">
-                            <h5 class="card-title">Afterworlds</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">September 2023 - November 2023</h6>
-                            <p class="card-text" style="text-align: justify;">Afterworlds is a game that would really test your skills in maneuvering the map, attacking enemies, and dodging the endless stream of enemies while the difficulty progresses as long as you stay alive. This game was developed through Unity and uses SQLite for its database management. This game features progressing difficulty level, beautiful art style, weapon shop and inventory, and player and leaderboards management.</p>
+                        <div class="card col-sm ms-3 me-3" style="width: 18rem;">
+                            <center>
+                                <img src="projects/afterworld.webp" class="card-img-top img-fluid" alt="Afterworlds Title Screen" style="width: 18vmin;">
+                                <img src="projects/afterworld.png" class="card-img-top img-fluid" alt="Afterworlds Main Menu" style="width: 18vmin;">
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">Afterworlds</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">September 2023 - November 2023</h6>
+                                <p class="card-text" style="text-align: justify;">Afterworlds is a game that would really test your skills in maneuvering the map, attacking enemies, and dodging the endless stream of enemies while the difficulty progresses as long as you stay alive. This game was developed through Unity and uses SQLite for its database management. This game features progressing difficulty level, beautiful art style, weapon shop and inventory, and player and leaderboards management.</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card" style="width: 18rem;">
-                        <img src="projects/marketplace.png" class="card-img-top" alt="Enrollment System">
-                        <div class="card-body">
-                            <h5 class="card-title">PHINMA UPang Marketplace</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">December 2023 - Present</h6>
-                            <p class="card-text" style="text-align: justify;">UPang Marketplace aims to provide help to all Students and Employees to sell their personal belongings that relates on University Essentials such as old books, uniform, and any other tools that related to their courses to help the buyer reuse that item and the same goes with the seller helps with their finances.</p>
+                        <div class="card col-sm ms-3 me-3" style="width: 18rem;">
+                            <img src="projects/marketplace.png" class="card-img-top img-fluid" alt="Marketplace">
+                            <div class="card-body">
+                                <h5 class="card-title">PHINMA UPang Marketplace</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">December 2023 - Present</h6>
+                                <p class="card-text" style="text-align: justify;">UPang Marketplace aims to provide help to all Students and Employees to sell their personal belongings that relates on University Essentials such as old books, uniform, and any other tools that related to their courses to help the buyer reuse that item and the same goes with the seller helps with their finances.</p>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
         </section>
-
-        <!-- about me short introduction kinemekeme-->
-
-        <section id="aboutMe" class="contents">
-            <div id="greeting3">
-                <p id="remarks3">About me</p>
-                <p id="intro3">I am a BSIT student who wants to pursue a software developer/game developer and I specialize in back end development.</p>
-            </div>
-        </section>
-
     </div>
 
     <footer>
         <div class="container-fluid" id="forFooter">
-            <div class="container">
-                <div class="contact-info">
+            <div class="container d-flex justify-content-center">
+                <div class="contact-info d-flex justify-content-center">
                     <div class="contact-info-item">
                         <a href="https://www.facebook.com/hyudz.esguerra.1" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="fill: rgb(215, 215, 215);" height="16" width="16"  viewBox="0 0 512 512">
                                 <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/>
                             </svg>
                         </a>
@@ -157,7 +192,7 @@
 
                     <div class="contact-info-item">
                         <a href="mailto:fraionhyudz10@gmail.com" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="fill: rgb(215, 215, 215);" height="16" width="16" viewBox="0 0 512 512">
                                 <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/>
                             </svg>
                         </a>
@@ -165,7 +200,7 @@
 
                     <div class="contact-info-item">
                         <a href="https://www.linkedin.com/in/fraion-hyudz-esguerra-914645125/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 448 512">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="fill: rgb(215, 215, 215);" height="16" width="18" viewBox="0 0 448 512">
                                 <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
                             </svg>
                         </a>
@@ -173,7 +208,7 @@
 
                     <div class="contact-info-item">
                         <a href="https://github.com/Hyudz" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16.5" viewBox="0 0 496 512">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="fill: rgb(215, 215, 215);" height="16" width="16.5" viewBox="0 0 496 512">
                                 <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
                             </svg>
                         </a>
