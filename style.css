@@ -9,14 +9,24 @@
 
 p {
     font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    color: white;
 }
 
 #remarks2 {
     position: relative;
     top: -15px; 
-    background-color: #fff;
     display: inline-block;
     padding: 0 10px; 
+}
+
+#proj-img {
+    filter: grayscale(100%);
+    transition: filter 0.2s ease-in-out;
+}
+
+.col {
+    background-color: #3a025b;
 }
 
 #remarks {
@@ -25,7 +35,7 @@ p {
     font-size: 72px;
 }
 
-#greeting1, #greeting2, #greeting3, #greeting4 {
+#greeting2{
     border-radius: 3px;
     height: 65%;
     left: 110px;
@@ -34,12 +44,9 @@ p {
 }
 
 #greeting {
-    border-radius: 3px;
-    width: 50%;
     height: 65%;
     left: 110px;
     top: 25%;
-    display: grid;
 }
 
 #content {
@@ -52,10 +59,6 @@ div.nav-bar{
     top: 10px;
     align-items: center;
     position: fixed;
-}
-
-div.container-fluid {
-    height: fit-content;
 }
 
 .navigation {
@@ -83,8 +86,6 @@ div.container-fluid {
 }
 
 #home {
-    display: grid;
-    grid-template-columns: auto auto;
     min-height: 50%;
     height: 100%;
     padding: 10px;
@@ -94,17 +95,14 @@ div.container-fluid {
     margin-top:25px;
 }
 
-#pfp {
-    height: 350px;
-    width: 350px;
-    top: 20%;
-    left: 70%;
-    position: absolute;
-    border-radius: 50%;
-}
-
 a {
     text-decoration: none;
+    transform: uppercase;
+}
+
+.link {
+    transform: uppercase;
+    color: white;
 }
 
 .card {
@@ -120,18 +118,6 @@ a {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
 
-.container {
-    padding: 2px 16px;
-    }
-
-.grid-container {
-    display: inline-flex    ;
-}
-
-.project-container {
-    padding: 2%;
-}
-
 .project {
     margin: 5%;
     display: flex;
@@ -140,15 +126,6 @@ a {
 .contact-info {
     display: inline-flex;
     align-self: center;
-}
-
-.project-image, .project-description {
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
-.project-image {
-    width: fit-content;
 }
 
 .contact-info-item {
@@ -170,18 +147,11 @@ div h4 {
     color: black;
 }
 
-#desc1 {
-    margin-top: 5%;
+#proj-img:hover {
+    filter: grayscale(0%);
+    transition: filter 0.2s ease-in;
 }
 
-#desc2 {
-    margin-top: 2%;
-}
-
-#desc3 {
-    margin-top: 15%;
-    margin-left: 10%;
-}
 
 .service {
     color: black;
@@ -193,16 +163,16 @@ div h4 {
     margin-left:2%;
 }
 
+.project-item {
+    width: 18rem; 
+    border: solid 3px white; 
+    border-radius: 30px;
+}
+
 div svg {
     margin-left: 35%;
     padding-top: 10%;
 }
-
-div p {
-    text-align: center;
-    color: black;
-}
-
 
 #forFooter {
         text-align: center;
@@ -219,11 +189,10 @@ div p {
 
 body {
     overflow-x: hidden;
+    background-color: #11001C;
 }
 
-.p-desc {
-    text-align: justify;
-}
+
 
 .project {
     margin-left: 20px;
@@ -231,4 +200,8 @@ body {
 
 .card-img-top {
     padding: 10px;
+}
+
+.desc, .card-text {
+    color: #520380;
 }
