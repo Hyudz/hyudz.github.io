@@ -19,15 +19,15 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" style="color: white; text-transform: uppercase;" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link active navigation-link" id="navigation-link" style="color: white; text-transform: uppercase;" aria-current="page" href="#home">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" style="color: white; text-transform: uppercase;" href="#services">Services</a>
+                        <a class="nav-link navigation-link" style="color: white; text-transform: uppercase;" href="#services">Services</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" style="color: white; text-transform: uppercase;" href="#portfolio">Projects</a>
+                        <a class="nav-link navigation-link" style="color: white; text-transform: uppercase;" href="#portfolio">Projects</a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +43,8 @@
                     <div class="container mt-5"></div>
                     <div class="container mt-5"></div>
                     <p style="text-align: justify;">Hello! I'm <span style="color: #CFA3EA;">Fraion Hyudz Esguerra</span>, a BSIT Student
-                    a dedicated student who wants to pursue a software developer/game developer and I specialize in back end development and everyday I try my best to be good and improve my skills in coding.</p>
+                    a dedicated student who wants to pursue a software developer/game developer and I specialize in back end development and everyday I try my best to be good and improve my skills in coding.
+                    As an IT student, coding makes me being challenge as I solve new problems everyday and learn from it and it make me improve as I dive deeper in the field of IT</p>
                 </div>
             </div>
         </section>
@@ -59,34 +60,55 @@
             
             <div class="container">
                 <div class="row">
-                    <div class="card col w-auto">
+                    <div class=" col w-auto service-item">
                         <div class="container">
                             <h4 class="service"><b>Back End Developer</b></h4>
-                            <p class="desc">Unlocking the power behind seamless digital experiences, I specialize in back-end development. From architecting robust server-side solutions to optimizing database performance, I am dedicated to creating the backbone that ensures your applications run smoothly and efficiently.</p>
+                            <p class="short-desc">Unlocking the power behind seamless digital experiences, I specialize in back-end development. From architecting robust server-side solutions to optimizing database performance, I am dedicated to creating the backbone that ensures your applications run smoothly and efficiently.</p>
                         </div>
                     </div>
-        
-                    <div class="card col w-auto">
-                        <div class="container">
-                            <h4 class="service"><b>Mobile Game Developer</b></h4>
-                            <p class="desc">Transforming ideas into interactive and captivating mobile games is my expertise. With a passion for innovation, I bring your gaming visions to life, combining cutting-edge technology with creative flair to deliver engaging and immersive experiences on mobile platforms.</p>
+
+                    <div class=" col w-auto service-item" style="background-color: #6d0ba9;">
+                        <h4 class="service"><b>Tools I tried using</b></h4>
+                        <div class="container d-flex justify-content-center">
+                            <img src="tools/c-sharp.svg" class="tool" alt="">
+                            <img src="tools/java.svg" class="tool" alt="">
+                            <img src="tools/postman.svg" class="tool" alt="">
+                            <img src="tools/kotlin.svg" class="tool" alt="">
+                            <img src="tools/laravel.svg" class="tool" alt="">
                         </div>
-                        
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class=" col w-auto service-item">
+                        <div class="container">
+                            <h4 class="service"><b>Database Manager</b></h4>
+                            <p class="short-desc">In the world of data, precision is paramount. As a skilled database manager, I organize, secure, and optimize your data infrastructure. From designing database schemas to implementing efficient querying, I ensure your data is not just stored but serves as a strategic asset for your business.</p>
+                        </div>
+                    </div>
+
+                    <div class=" col w-auto ">
+                        <div class="container service-item d-flex justify-content-center" style="background-color: #6d0ba9;">
+                            <img src="tools/sqlite.svg" class="tool" alt="">
+                            <img src="tools/mysql.svg" class="tool" alt="">
+                            <img src="tools/xampp.svg" class="tool" alt="">
+                        </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="card col w-auto">
+                    <div class=" col w-auto service-item">
                         <div class="container">
-                            <h4 class="service"><b>Database Manager</b></h4>
-                            <p class="desc">In the world of data, precision is paramount. As a skilled database manager, I organize, secure, and optimize your data infrastructure. From designing database schemas to implementing efficient querying, I ensure your data is not just stored but serves as a strategic asset for your business.</p>
+                            <h4 class="service"><b>Game Developer</b></h4>
+                            <p class="short-desc">Transforming ideas into interactive and captivating mobile games is my expertise. With a passion for innovation, I bring your gaming visions to life, combining cutting-edge technology with creative flair to deliver engaging and immersive experiences on mobile platforms.</p>
                         </div>
                     </div>
 
-                    <div class="card col w-auto">
-                        <div class="container">
-                            <h4 class="service"><b>Layout Artist</b></h4>
-                            <p class="desc">Creative and detail-oriented layout artist proficient in both Photoshop and Canva, adept at transforming concepts into visually stunning designs. With a keen eye for aesthetics and a passion for storytelling through visuals, I bring a unique blend of technical skill and artistic flair to elevate any project.</p>
+                    <div class=" col w-auto">
+                        <div class="container service-item d-flex justify-content-center" style="background-color: #6d0ba9;">
+                            <img src="tools/unity.svg" class="tool" alt="">
+                            <img src="tools/c-sharp.svg" class="tool" alt="">
                         </div>
                     </div>
                 </div>
@@ -104,8 +126,8 @@
                         <div class="col-sm ms-3 me-3 project-item" >
                             <img src="projects/proj1.png" class="card-img-top img-fluid" id="proj-img" alt="Enrollment System">
                             <div class="card-body">
-                                <h5 class="card-title">Enrollment System for Freshmen</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">November 2022</h6>
+                                <h5 class="title">Enrollment System for Freshmen</h5>
+                                <h6 class="sub-title mb-2">November 2022</h6>
                                 <p class="card-text" style="text-align: justify;">An enrollment system made using Python during our first semester. It can create, read, update, delete, and save data but this doesn’t have any database applied.</p>
                             </div>
                         </div>
@@ -113,17 +135,17 @@
                         <div class="col-sm ms-3 me-3 project-item">
                             <img src="projects/proj2.png" class="card-img-top img-fluid" id="proj-img" alt="Ropersors Java Game">
                             <div class="card-body">
-                                <h5 class="card-title">Ropersors</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">March 2023 - April 2023</h6>
-                                <p class="card-text" style="text-align: justify;">A RPS-based game using Java that incorporates elements such as fire, water, and flora(nature) to add another layer of fun to the game. The players will be granted 10 lives at the start of each game, and it will then be decremented depending on the outcomes of each round. For each round, the players will choose among the objects (R,P,S). Then the program will randomly affix a randomized element to imbue their chosen object to raise the odds while preserving the fairness of the game.</p>
+                                <h5 class="title">Ropersors</h5>
+                                <h6 class="sub-title mb-2">March 2023 - April 2023</h6>
+                                <p class="card-text mb-3" style="text-align: justify;">A RPS-based game using Java that incorporates elements such as fire, water, and flora(nature) to add another layer of fun to the game. The players will be granted 10 lives at the start of each game, and it will then be decremented depending on the outcomes of each round. For each round, the players will choose among the objects (R,P,S). Then the program will randomly affix a randomized element to imbue their chosen object to raise the odds while preserving the fairness of the game.</p>
                             </div>
                         </div>
 
                         <div class="col-sm ms-3 me-3 project-item">
                             <img src="projects/pitique.png" class="card-img-top img-fluid" id="proj-img" alt="Pitique">
                             <div class="card-body">
-                                <h5 class="card-title">Pitique</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">March 2023 - April 2023</h6>
+                                <h5 class="title">Pitique</h5>
+                                <h6 class="sub-title mb-2">March 2023 - April 2023</h6>
                                 <p class="card-text" style="text-align: justify;">Pitique is a a photography website consisting of various pictures, ranging from the day-to-day college life to the mesmerizing sceneries of our nature. Our team aims to create a hub for photography enthusiasts and for others to gain an interest and appreciate the art of photography.</p>
                             </div>
                         </div>
@@ -131,32 +153,32 @@
 
                     <div class="row">
 
-                        <div class=" col-sm ms-3 me-3 project-item">
+                        <div class=" col-sm ms-3 me-3 mt-3 mb-3 project-item">
                             <img src="projects/rps mobile.jpg" class="card-img-top game img-fluid" id="proj-img" alt="Ropersors Mobile">
                             <div class="card-body">
-                                <h5 class="card-title">Ropersors Mobile</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">May 2023</h6>
+                                <h5 class="title">Ropersors Mobile</h5>
+                                <h6 class="sub-title mb-2">May 2023</h6>
                                 <p class="card-text" style="text-align: justify;">A mobile version of Ropersors Java Game</p>
                             </div>
                         </div>
 
-                        <div class=" col-sm ms-3 me-3 project-item">
+                        <div class=" col-sm ms-3 me-3 mt-3 mb-3 project-item">
                             <center>
                                 <img src="projects/afterworld.webp" class="card-img-top img-fluid" id="proj-img" alt="Afterworlds Title Screen" style="width: 18vmin;">
                                 <img src="projects/afterworld.png" class="card-img-top img-fluid" id="proj-img" alt="Afterworlds Main Menu" style="width: 18vmin;">
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Afterworlds</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">September 2023 - November 2023</h6>
-                                <p class="card-text" style="text-align: justify;">Afterworlds is a game that would really test your skills in maneuvering the map, attacking enemies, and dodging the endless stream of enemies while the difficulty progresses as long as you stay alive. This game was developed through Unity and uses SQLite for its database management. This game features progressing difficulty level, beautiful art style, weapon shop and inventory, and player and leaderboards management.</p>
+                                <h5 class="title">Afterworlds</h5>
+                                <h6 class="sub-title mb-2">September 2023 - November 2023</h6>
+                                <p class="card-text mb-3" style="text-align: justify;">Afterworlds is a game that would really test your skills in maneuvering the map, attacking enemies, and dodging the endless stream of enemies while the difficulty progresses as long as you stay alive. This game was developed through Unity and uses SQLite for its database management. This game features progressing difficulty level, beautiful art style, weapon shop and inventory, and player and leaderboards management.</p>
                             </div>
                         </div>
 
-                        <div class=" col-sm ms-3 me-3 project-item">
+                        <div class=" col-sm ms-3 me-3 mt-3 mb-3 project-item">
                             <img src="projects/marketplace.png" class="card-img-top img-fluid" id="proj-img" alt="Marketplace">
                             <div class="card-body">
-                                <h5 class="card-title">PHINMA UPang Marketplace</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">December 2023 - Present</h6>
+                                <h5 class="title">PHINMA UPang Marketplace</h5>
+                                <h6 class="sub-title mb-2">December 2023 - Present</h6>
                                 <p class="card-text" style="text-align: justify;">UPang Marketplace aims to provide help to all Students and Employees to sell their personal belongings that relates on University Essentials such as old books, uniform, and any other tools that related to their courses to help the buyer reuse that item and the same goes with the seller helps with their finances.</p>
                             </div>
                         </div>
@@ -168,7 +190,7 @@
     </div>
 
     <footer>
-        <div class="container-fluid" id="forFooter" style="background-color: #743A36;">
+        <div class="container-fluid" id="forFooter" style="background-color: #3c1351;">
             <div class="container d-flex justify-content-center">
                 <div class="contact-info d-flex justify-content-center">
                     <div class="contact-info-item">

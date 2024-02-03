@@ -21,12 +21,8 @@ p {
 }
 
 #proj-img {
-    filter: grayscale(100%);
+    filter: grayscale(50%);
     transition: filter 0.2s ease-in-out;
-}
-
-.col {
-    background-color: #3a025b;
 }
 
 #remarks {
@@ -152,7 +148,6 @@ div h4 {
     transition: filter 0.2s ease-in;
 }
 
-
 .service {
     color: black;
     text-align: center;
@@ -162,6 +157,22 @@ div h4 {
     width: 100vmin;
     margin-left:2%;
 }
+
+.tool {
+    width: 4vmax;
+    margin: 3%;
+}
+
+.service-item {
+    border: solid 3px white; 
+    border-radius: 30px;
+    margin: 2%;
+}
+
+.service {
+    color: #CFA3EA;
+}
+
 
 .project-item {
     width: 18rem; 
@@ -201,6 +212,14 @@ body {
     padding: 10px;
 }
 
-.desc, .card-text {
-    color: #520380;
+.card-text {
+    color: white;
+}
+
+.desc {
+    color: black;
+}
+
+.title, .sub-title {
+    color: #CFA3EA;
 }
