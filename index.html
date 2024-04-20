@@ -4,33 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/de52212229.js" crossorigin="anonymous"></script>
     <title>Hyudz</title>
     <link rel="icon" href="projects/fav.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body style="background-color: #11001C;">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon btn btn-secondary"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active navigation-link" id="navigation-link" style="color: white; text-transform: uppercase;" aria-current="page" href="#home">Home</a>
-                    </li>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active navigation-link" id="navigation-link" aria-current="page" href="#home">
+                        <svg viewBox="0 0 24 24" style="width: 32px; height: 32px;" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M22 12.2039V13.725C22 17.6258 22 19.5763 20.8284 20.7881C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.7881C2 19.5763 2 17.6258 2 13.725V12.2039C2 9.91549 2 8.77128 2.5192 7.82274C3.0384 6.87421 3.98695 6.28551 5.88403 5.10813L7.88403 3.86687C9.88939 2.62229 10.8921 2 12 2C13.1079 2 14.1106 2.62229 16.116 3.86687L18.116 5.10812C20.0131 6.28551 20.9616 6.87421 21.4808 7.82274" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15 18H9" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+                    </a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link navigation-link" style="color: white; text-transform: uppercase;" href="#services">Services</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link navigation-link" href="#about_me">
+                        <svg viewBox="0 0 24 24" style="width: 32px; height: 32px;" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12.1207 12.78C12.0507 12.77 11.9607 12.77 11.8807 12.78C10.1207 12.72 8.7207 11.28 8.7207 9.50998C8.7207 7.69998 10.1807 6.22998 12.0007 6.22998C13.8107 6.22998 15.2807 7.69998 15.2807 9.50998C15.2707 11.28 13.8807 12.72 12.1207 12.78Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="0.34" d="M18.7398 19.3801C16.9598 21.0101 14.5998 22.0001 11.9998 22.0001C9.39977 22.0001 7.03977 21.0101 5.25977 19.3801C5.35977 18.4401 5.95977 17.5201 7.02977 16.8001C9.76977 14.9801 14.2498 14.9801 16.9698 16.8001C18.0398 17.5201 18.6398 18.4401 18.7398 19.3801Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link navigation-link" style="color: white; text-transform: uppercase;" href="#portfolio">Projects</a>
-                    </li>
-                </ul>
-            </div>
+                <li class="nav-item">
+                    <a class="nav-link navigation-link" href="#services">
+                        <svg viewBox="0 0 48 48" style="width: 32px; height: 32px;" id="a" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.b{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;}</style></defs><circle class="b" cx="9.379" cy="9.379" r="3.879"></circle><circle class="b" cx="9.379" cy="38.621" r="3.879"></circle><circle class="b" cx="9.379" cy="24" r="3.879"></circle><rect class="b" x="17.4355" y="5.5" width="25.0645" height="7.7581" rx="1.7903" ry="1.7903"></rect><rect class="b" x="17.4355" y="34.7419" width="25.0645" height="7.7581" rx="1.7903" ry="1.7903"></rect><rect class="b" x="17.4355" y="20.121" width="25.0645" height="7.7581" rx="1.7903" ry="1.7903"></rect></g></svg>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link navigation-link" href="#portfolio">
+                        <svg viewBox="0 0 24 24" style="width: 32px; height: 32px;" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M17 5V3H7v2H1v16h22V5zM8 4h8v1H8zm14 16H2V10h20zm0-11H2V6h20z"></path><path fill="none" d="M0 0h24v24H0z"></path></g></svg>
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -42,12 +54,25 @@
                 <div id="greeting">
                     <div class="container mt-5"></div>
                     <div class="container mt-5"></div>
-                    <p style="text-align: justify;">Hello! I'm <span style="color: #CFA3EA;">Fraion Hyudz Esguerra</span>, a BSIT Student
-                    a dedicated student who wants to pursue a software developer/game developer and I specialize in back end development and everyday I try my best to be good and improve my skills in coding.
-                    As an IT student, coding makes me being challenge as I solve new problems everyday and learn from it and it make me improve as I dive deeper in the field of IT</p>
+                    <h1 style="text-align: center;" style="color: white;">Hello! I'm <span style="color: #CFA3EA;">Fraion Hyudz Esguerra</span>!</h1>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-rounded" style="background-color: #CFA3EA; border-color: #CFA3EA;">
+                            <svg viewBox="0 0 24 24" style="width: 32px; height: 32px;" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M3 14.25C3.41421 14.25 3.75 14.5858 3.75 15C3.75 16.4354 3.75159 17.4365 3.85315 18.1919C3.9518 18.9257 4.13225 19.3142 4.40901 19.591C4.68577 19.8678 5.07435 20.0482 5.80812 20.1469C6.56347 20.2484 7.56459 20.25 9 20.25H15C16.4354 20.25 17.4365 20.2484 18.1919 20.1469C18.9257 20.0482 19.3142 19.8678 19.591 19.591C19.8678 19.3142 20.0482 18.9257 20.1469 18.1919C20.2484 17.4365 20.25 16.4354 20.25 15C20.25 14.5858 20.5858 14.25 21 14.25C21.4142 14.25 21.75 14.5858 21.75 15V15.0549C21.75 16.4225 21.75 17.5248 21.6335 18.3918C21.5125 19.2919 21.2536 20.0497 20.6517 20.6516C20.0497 21.2536 19.2919 21.5125 18.3918 21.6335C17.5248 21.75 16.4225 21.75 15.0549 21.75H8.94513C7.57754 21.75 6.47522 21.75 5.60825 21.6335C4.70814 21.5125 3.95027 21.2536 3.34835 20.6517C2.74643 20.0497 2.48754 19.2919 2.36652 18.3918C2.24996 17.5248 2.24998 16.4225 2.25 15.0549C2.25 15.0366 2.25 15.0183 2.25 15C2.25 14.5858 2.58579 14.25 3 14.25Z" fill="#1C274C"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16.75C12.2106 16.75 12.4114 16.6615 12.5535 16.5061L16.5535 12.1311C16.833 11.8254 16.8118 11.351 16.5061 11.0715C16.2004 10.792 15.726 10.8132 15.4465 11.1189L12.75 14.0682V3C12.75 2.58579 12.4142 2.25 12 2.25C11.5858 2.25 11.25 2.58579 11.25 3V14.0682L8.55353 11.1189C8.27403 10.8132 7.79963 10.792 7.49393 11.0715C7.18823 11.351 7.16698 11.8254 7.44648 12.1311L11.4465 16.5061C11.5886 16.6615 11.7894 16.75 12 16.75Z" fill="#1C274C"></path> </g></svg>
+                            <span style="color: white;">Download CV</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <secion id="about_me" class="contents mt-5">
+            <div>
+                <p>
+                    Im a dedicated student who wants to pursue a software developer/game developer and I specialize in back end development and everyday I try my best to be good and improve my skills in coding.
+                    As an IT student, coding makes me being challenge as I solve new problems everyday and learn from it and it make me improve as I dive deeper in the field of IT
+                </p>
+            </div>
+        </secion>
 
         <div class=" container">
             <div class="row mt-5 mb-5"></div>
@@ -55,64 +80,211 @@
 
         <section id="services" class="contents mt-5">
             <div class="title">
-                <p id="remarks1">Services</p>
+                <p id="remarks1">Services I can offer</p>
             </div>
             
             <div class="container">
-                <div class="row">
-                    <div class=" col w-auto service-item">
+                <div class="d-flex flex-row flex-wrap">
+                    <div class=" w-5 service-item">
                         <div class="container">
-                            <h4 class="service"><b>Back End Developer</b></h4>
-                            <p class="short-desc">Unlocking the power behind seamless digital experiences, I specialize in back-end development. From architecting robust server-side solutions to optimizing database performance, I am dedicated to creating the backbone that ensures your applications run smoothly and efficiently.</p>
+                            <div class="d-flex justify-content-center m-2">
+                                <svg style="width: 64px; height: 64px;" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M854.7 828.1H169.9c-38.9 0-70.5-31.6-70.5-70.5v-499c0-38.9 31.6-70.5 70.5-70.5h684.7c38.9 0 70.5 31.6 70.5 70.5v499c0.1 38.9-31.5 70.5-70.4 70.5z" fill="#FFFFFF"></path><path d="M885.2 258.1c0-16.5-13.5-30-30-30H169.4c-16.5 0-30 13.5-30 30v120.1h745.7V258.1z m-649.7 96.1c-28.2 0-51.2-23-51.2-51.2s23-51.2 51.2-51.2 51.2 23 51.2 51.2-22.9 51.2-51.2 51.2z m281.8-6.8H374.7c-24.1 0-43.7-19.6-43.7-43.7s19.6-43.7 43.7-43.7h142.6c24.1 0 43.7 19.6 43.7 43.7s-19.6 43.7-43.7 43.7z" fill="#E6E6E6"></path><path d="M213.3 752.8h298.8c5.5 0 10-4.5 10-10s-4.5-10-10-10H213.3c-8.5 0-15.4-6.9-15.4-15.4V524.6c0-5.5-4.5-10-10-10s-10 4.5-10 10v192.9c0.1 19.4 15.9 35.3 35.4 35.3z" fill="#6b4487"></path><path d="M235.5 271.8c-17.2 0-31.2 14-31.2 31.2s14 31.2 31.2 31.2 31.2-14 31.2-31.2-14-31.2-31.2-31.2z" fill="#FFFFFF"></path><path d="M235.5 251.8c-28.2 0-51.2 23-51.2 51.2s23 51.2 51.2 51.2 51.2-23 51.2-51.2-22.9-51.2-51.2-51.2z m0 82.4c-17.2 0-31.2-14-31.2-31.2s14-31.2 31.2-31.2 31.2 14 31.2 31.2-14 31.2-31.2 31.2z" fill="#794d98"></path><path d="M517.3 280.1H374.7c-13 0-23.7 10.6-23.7 23.7s10.6 23.7 23.7 23.7h142.6c13 0 23.7-10.6 23.7-23.7s-10.7-23.7-23.7-23.7z" fill="#FFFFFF"></path><path d="M517.3 260.1H374.7c-24.1 0-43.7 19.6-43.7 43.7s19.6 43.7 43.7 43.7h142.6c24.1 0 43.7-19.6 43.7-43.7s-19.6-43.7-43.7-43.7z m0 67.3H374.7c-13 0-23.7-10.6-23.7-23.7s10.6-23.7 23.7-23.7h142.6c13 0 23.7 10.6 23.7 23.7s-10.7 23.7-23.7 23.7z" fill="#794d98"></path><path d="M855.2 188.1H169.4c-38.6 0-70 31.4-70 70v500c0 38.6 31.4 70 70 70h685.7c38.6 0 70-31.4 70-70v-500c0.1-38.6-31.3-70-69.9-70z m30 570c0 16.5-13.5 30-30 30H169.4c-16.5 0-30-13.5-30-30V398.2h745.7v359.9z m0-379.9H139.5V258.1c0-16.5 13.5-30 30-30h685.7c16.5 0 30 13.5 30 30v120.1z" fill="#794d98"></path><path d="M459.9 624.6l-114.3-45.3 114.3-43.7v-46.5L296.1 560v39.5l163.8 71.2zM568.7 454.8h-34.4L475.1 702h33.8zM747.9 560.3l-164-70.9v45.8l114.4 44.5-114.4 45v46.2l164-71.4z" fill="#794d98"></path></g></svg>
+                            </div>
+                            <h4 class="service"><b>Web Developer</b></h4>
+                            <p class="short-desc">I ensure that the websites and applications I build are responsive, scalabe, and optimized for performance, providing an exceptional user experience across different devices and screen sizes.</p>
                         </div>
                     </div>
 
-                    <div class=" col w-auto service-item" style="background-color: #6d0ba9;">
-                        <h4 class="service"><b>Tools I tried using</b></h4>
-                        <div class="container d-flex justify-content-center">
-                            <img src="tools/c-sharp.svg" class="tool" alt="">
-                            <img src="tools/java.svg" class="tool" alt="">
-                            <img src="tools/postman.svg" class="tool" alt="">
-                            <img src="tools/kotlin.svg" class="tool" alt="">
-                            <img src="tools/laravel.svg" class="tool" alt="">
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class=" col w-auto service-item">
+                    <div class="w-5 service-item">
                         <div class="container">
+                            <div class="d-flex justify-content-center m-2">
+                                <svg viewBox="0 0 1024 1024" style="width: 64px; height: 64px;" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M686.8 235.9a27 28.7 0 1 0 54 0 27 28.7 0 1 0-54 0Z" fill="#794d98"></path><path d="M686.8 461.3a27 28.7 0 1 0 54 0 27 28.7 0 1 0-54 0Z" fill="#794d98"></path><path d="M774.3 180.3H180.2c-16.5 0-30 13.5-30 30v51.3c0 16.5 13.5 30 30 30h594.1c16.5 0 30-13.5 30-30v-51.3c0-16.6-13.5-30-30-30z m-327.8 65.6H207.1c-5.5 0-10-4.5-10-10s4.5-10 10-10h239.4c5.5 0 10 4.5 10 10s-4.5 10-10 10z m267.3 18.8c-14.9 0-27-12.9-27-28.7s12.1-28.7 27-28.7 27 12.9 27 28.7-12.1 28.7-27 28.7zM804.3 435.6c0-16.5-13.5-30-30-30H180.2c-16.5 0-30 13.5-30 30V487c0 16.5 13.5 30 30 30h394.7l32.7-20c5.9-3.6 12.7-5.6 19.7-5.7h0.7c6.4 0 12.9 1.6 18.6 4.5 6.1 3.1 11.3 7.7 15.1 13.3l5.4 7.9h48.8l4.3-8.4c2.4-4.7 5.7-8.8 9.9-12.1 3.9-3.2 8.4-5.5 13.3-6.9 3.6-1.1 7.4-1.6 11.1-1.6 6.4 0 12.8 1.6 18.5 4.5l25 12.8c3.9-5.1 6.2-11.4 6.2-18.3v-51.4zM713.8 490c-14.9 0-27-12.9-27-28.7s12.1-28.7 27-28.7 27 12.9 27 28.7-12.1 28.7-27 28.7z" fill="#FFFFFF"></path><path d="M774.3 140.3H180.2c-38.6 0-70 31.4-70 70v51.3c0 38.6 31.4 70 70 70h594.1c38.6 0 70-31.4 70-70v-51.3c0-38.6-31.4-70-70-70z m30 121.3c0 16.5-13.5 30-30 30H180.2c-16.5 0-30-13.5-30-30v-51.3c0-16.5 13.5-30 30-30h594.1c16.5 0 30 13.5 30 30v51.3z" fill="#794d98"></path><path d="M446.5 225.9H207.1c-5.5 0-10 4.5-10 10s4.5 10 10 10h239.4c5.5 0 10-4.5 10-10s-4.5-10-10-10z" fill="#794d98"></path><path d="M504.5 731.1c-4-5.8-6.4-12.4-6.9-19.4l-3.5-47.3c-0.8-10.4 2.6-20.3 9.5-27.9 1.9-2.1 3.9-3.9 6.1-5.5H180.2c-16.5 0-30 13.5-30 30v51.3c0 16.5 13.5 30 30 30h336.1c-4.7-2.9-8.7-6.7-11.8-11.2z" fill="#E6E6E6"></path><path d="M569.8 762.3c-3.1-4.6-5.9-9.4-8.5-14.3l-22.4 0.6h-1c-6.4 0-12.8-1.5-18.5-4.5-1.1-0.5-2.1-1.1-3.1-1.8H180.2c-16.5 0-30-13.5-30-30V661c0-16.5 13.5-30 30-30h329.5c1.9-1.4 4-2.6 6.2-3.6 4.8-2.2 10-3.4 15.4-3.5l21.3-0.6c0.4-1.1 0.8-2.1 1.2-3.2 1.7-4.2 3.5-8.4 5.6-12.3 2.5-4.9 5.4-9.8 8.6-14.6l-1.5-2.3H180.2c-38.6 0-70 31.4-70 70v51.3c0 38.6 31.4 70 70 70h399.7l2-3.9c-4.4-5-8.4-10.4-12.1-16z" fill="#794d98"></path><path d="M769.9 661.6c-3.2-9-8-17.2-14.4-24.4-2-2.2-4-4.2-6.2-6.2-4.8-4.2-10.1-7.9-15.9-10.9-8.4-4.3-17.4-7-26.7-8-9.6-1-19.1-0.2-28.3 2.5-4.7 1.4-9.1 3.2-13.3 5.5-3.9 2.1-7.7 4.6-11.1 7.5-1.3 1.1-2.5 2.2-3.7 3.4-5.1 5-9.3 10.7-12.6 17-4 7.9-6.4 16.3-7 25.2-0.7 9.2 0.6 18.4 3.7 27.4 3.2 9 8 17.2 14.4 24.4 6.2 7 13.7 12.7 22.1 17 0.2 0.1 0.4 0.2 0.7 0.3 8.3 4.1 17 6.7 26.1 7.7 9.6 1 19.1 0.2 28.3-2.5 4.5-1.3 8.7-3 12.7-5.1 4.2-2.2 8.1-4.8 11.7-7.8 6.8-5.7 12.3-12.5 16.3-20.4 4-7.9 6.4-16.3 7-25.2 0.6-9.2-0.6-18.4-3.8-27.4z" fill="#FFFFFF"></path><path d="M876.5 654.4c-0.1-2-1.6-3.9-3.6-5-1-0.5-2.1-0.8-3.2-0.8l-26.4 0.7-18.4 0.5-0.7-1.7-3.8-8.7c-1.6-3.8-3.4-7.4-5.4-11-5.8-10.4-13-20-21.5-28.6l-7.8-7.9-0.8-0.8L805 552c0.4-0.7 0.5-1.5 0.4-2.3-0.2-1.8-1.6-3.7-3.6-4.8l-44-22.6c-1-0.5-2.1-0.8-3.2-0.8-2 0-3.7 0.9-4.4 2.3l-17 33.1-3.2 6.1-12-1.9c-6.9-1.1-13.9-1.6-20.8-1.6-9.1 0-18.3 1-27.1 2.9l-11.1 2.4-5.3-7.8-19.8-29c-0.7-1-1.6-1.8-2.6-2.3-1-0.5-2.2-0.8-3.3-0.8-1.1 0-2.1 0.3-2.9 0.8l-40.5 24.8c-1 0.6-1.6 1.4-1.8 2.5-0.3 1.3 0 2.6 0.9 3.9l0.2 0.2 23.2 34 2.3 3.4-7.7 9.7c-4.1 5.2-7.7 10.6-10.8 16.1-0.6 1-1.1 2-1.6 3-1.3 2.5-2.5 5.2-3.6 7.9-1.8 4.3-3.3 8.7-4.6 13.3l-3.3 11.9-45.5 1.2c-1.5 0-2.8 0.6-3.7 1.5-0.7 0.8-1 1.8-1 2.9l3.5 47.3c0.1 2 1.6 3.9 3.6 5 1 0.5 2.1 0.8 3.2 0.8l44.7-1.2 4.5 10.4c2.7 6.3 6 12.3 9.7 18.1 4.6 7.1 9.9 13.8 15.8 20 0.5 0.5 1 1 1.4 1.5l8.6 8.6-5.1 9.9-15 29.3c-0.7 1.4-0.4 2.8-0.1 3.6 0.6 1.5 1.7 2.7 3.3 3.5l44 22.6c1 0.5 2.1 0.8 3.2 0.8 2 0 3.7-0.9 4.4-2.3l20.1-39.2 12 1.9c6.9 1.1 13.9 1.6 20.8 1.6 9.1 0 18.3-1 27.1-2.9l11.1-2.4 25.1 36.8c0.7 1 1.6 1.8 2.6 2.3 1 0.5 2.2 0.8 3.3 0.8 1.1 0 2.1-0.3 2.9-0.8l40.5-24.8c1-0.6 1.6-1.4 1.8-2.5 0.3-1.6-0.3-3-0.9-3.9l-20.9-30.7-4.7-7 7.2-9 0.5-0.6c4.9-6.1 9-12.5 12.4-19.1 2.3-4.4 4.3-9.2 6-14.1 0.8-2.3 1.6-4.7 2.2-7.1l3.4-11.9 14.4-0.4 31.1-0.8c1.5 0 2.8-0.6 3.7-1.5 0.7-0.8 1-1.8 1-2.9l-3.5-47.3zM661.3 760.7c-9.4-4.8-17.8-11-25-18.4-1.1-1.1-2.1-2.2-3.2-3.4-8.3-9.3-14.5-19.9-18.6-31.5-4.1-11.7-5.7-23.7-4.9-35.8 0.8-11.7 3.9-22.9 9.3-33.3 1.3-2.6 2.7-5 4.3-7.4 2.5-3.8 5.3-7.5 8.3-10.9 2.8-3.1 5.8-6 9-8.6 9.3-7.7 20-13.4 31.9-16.9 6.5-1.9 13.1-3.1 19.8-3.6 4.4-0.3 8.8-0.3 13.3 0l3.3 0.3c11.9 1.3 23.4 4.7 34.1 10.2 9.5 4.9 18 11.1 25.3 18.7 1 1 1.9 2 2.9 3.1 2.3 2.6 4.4 5.2 6.4 8 5.2 7.2 9.3 15.1 12.2 23.5 4.1 11.7 5.7 23.7 4.9 35.8-0.8 11.7-3.9 22.9-9.3 33.3-3.5 6.8-7.8 13-12.9 18.6-2.7 3-5.6 5.7-8.7 8.3-5.6 4.6-11.7 8.5-18.2 11.7-4.4 2.1-8.9 3.9-13.7 5.3-11.8 3.5-24.1 4.6-36.4 3.3-10.7-1.1-21-4-30.7-8.6-1.1-0.6-2.2-1.1-3.4-1.7z" fill="#FFFFFF"></path><path d="M913.5 699.2l-3.5-47.3c-0.5-6.9-2.9-13.6-6.9-19.4-3.8-5.5-9-10-14.9-13-5.7-2.9-12.1-4.5-18.5-4.5h-1l-22.4 0.6c-5.7-10.8-12.6-21-20.6-30.4l9.2-17.9c2.4-4.7 3.8-9.8 4.1-15.1 0.3-5-0.5-10-2.2-14.8-1.3-3.6-3.1-7-5.3-10.1 8.1-11.4 12.8-25.3 12.8-40.3v-51.3c0-38.6-31.4-70-70-70H180.2c-38.6 0-70 31.4-70 70V487c0 38.6 31.4 70 70 70h369.1c0.1 1.4 0.3 2.7 0.6 4.1 1 5.2 3.1 10.1 6.1 14.5l10.5 15.4 1.5 2.3c-3.2 4.8-6.1 9.6-8.6 14.6-2 3.9-3.9 8.1-5.6 12.3-0.4 1.1-0.8 2.1-1.2 3.2l-21.3 0.6c-5.4 0.1-10.6 1.3-15.4 3.5-2.2 1-4.3 2.2-6.2 3.6-2.2 1.6-4.3 3.4-6.1 5.5-6.9 7.7-10.3 17.6-9.5 27.9l3.5 47.3c0.5 6.9 2.9 13.6 6.9 19.4 3.1 4.5 7.2 8.3 11.8 11.3 1 0.6 2 1.2 3.1 1.8 5.7 2.9 12.1 4.5 18.5 4.5h1l22.4-0.6c2.6 4.9 5.4 9.7 8.5 14.3 3.7 5.6 7.7 10.9 12.1 16.1l-2 3.9-7.2 14c-2.4 4.7-3.8 9.8-4.1 15.1-0.3 5 0.5 10 2.2 14.8 3.4 9.7 10.4 17.6 19.7 22.4l44 22.6c5.8 2.9 12.2 4.5 18.5 4.5 3.8 0 7.5-0.5 11.1-1.6 4.9-1.4 9.4-3.8 13.3-6.9 4.1-3.3 7.5-7.4 9.9-12.1l9.2-17.9c4.6 0.4 9.2 0.6 13.8 0.6 7.7 0 15.3-0.5 22.9-1.6l12.6 18.5c3.8 5.6 9 10.2 15.1 13.3 5.7 2.9 12.2 4.5 18.6 4.5h0.7c7-0.1 13.8-2.1 19.7-5.7l40.5-24.8c8.9-5.4 14.9-14 17.1-24.1 1.1-5 1.1-10.2 0.1-15.3-1-5.2-3.1-10.1-6.1-14.5l-12-17.6c3.2-4.8 6.1-9.6 8.6-14.6 2.5-4.9 4.8-10.1 6.8-15.5l21.3-0.6c5.4-0.1 10.6-1.3 15.4-3.5 4.7-2.2 8.9-5.2 12.3-9 7-8 10.4-17.9 9.6-28.3zM150.2 487v-51.3c0-16.5 13.5-30 30-30h594.1c16.5 0 30 13.5 30 30V487c0 6.9-2.3 13.2-6.2 18.3l-25-12.8c-5.8-2.9-12.2-4.5-18.5-4.5-3.8 0-7.5 0.5-11.1 1.6-4.9 1.4-9.4 3.8-13.3 6.9-4.1 3.3-7.5 7.4-9.9 12.1L716 517h-48.8l-5.4-7.9c-3.8-5.6-9-10.2-15.1-13.3-5.8-2.9-12.2-4.5-18.6-4.5h-0.7c-7 0.1-13.8 2.1-19.7 5.7L575 517H180.2c-16.5 0-30-13.5-30-30z m728.9 217.7c-0.9 1-2.1 1.5-3.7 1.5l-31.1 0.8-14.4 0.4-3.4 11.9c-0.7 2.4-1.4 4.8-2.2 7.1-1.7 4.9-3.7 9.7-6 14.1-3.3 6.5-7.5 12.9-12.4 19.1l-0.5 0.6-7.2 9 4.7 7 20.9 30.7c0.6 0.9 1.2 2.3 0.9 3.9-0.2 1-0.9 1.9-1.8 2.5L782.4 838c-0.8 0.5-1.8 0.8-2.9 0.8-1.1 0-2.2-0.3-3.3-0.8-1.1-0.5-2-1.3-2.6-2.3l-25.1-36.8-11.1 2.4c-8.9 1.9-18 2.9-27.1 2.9-6.9 0-13.9-0.6-20.8-1.6l-12-1.9-20.1 39.2c-0.7 1.4-2.4 2.3-4.4 2.3-1.1 0-2.2-0.3-3.2-0.8l-44-22.6c-1.6-0.8-2.7-2.1-3.3-3.5-0.3-0.7-0.6-2.2 0.1-3.6l15-29.3 5.1-9.9-8.6-8.6c-0.5-0.5-1-1-1.4-1.5-6-6.2-11.3-12.9-15.8-20-3.7-5.8-7-11.8-9.7-18.1l-4.5-10.4-44.7 1.2c-1.1 0-2.2-0.3-3.2-0.8-2.1-1.1-3.5-3-3.6-5l-3.5-47.3c-0.1-1.1 0.2-2.1 1-2.9 0.9-1 2.1-1.5 3.7-1.5l45.5-1.2 3.3-11.9c1.3-4.6 2.8-9.1 4.6-13.3 1.1-2.7 2.3-5.3 3.6-7.9 0.5-1 1.1-2 1.6-3 3-5.5 6.7-10.9 10.8-16.1l7.7-9.7-2.3-3.4-23.2-34-0.2-0.2c-0.9-1.3-1.2-2.6-0.9-3.9 0.2-1 0.9-1.9 1.8-2.5l40.5-24.8c0.8-0.5 1.8-0.8 2.9-0.8 1.1 0 2.2 0.3 3.3 0.8 1.1 0.5 2 1.3 2.6 2.3l19.8 29 5.3 7.8 11.1-2.4c8.9-1.9 18-2.9 27.1-2.9 6.9 0 13.9 0.6 20.8 1.6l12 1.9 3.1-6.1 17-33.1c0.7-1.4 2.4-2.3 4.4-2.3 1.1 0 2.2 0.3 3.2 0.8l44 22.6c2 1 3.4 2.9 3.6 4.8 0.1 0.8 0 1.6-0.4 2.3l-20.1 39.2 0.8 0.8 7.8 7.9c8.6 8.7 15.8 18.2 21.5 28.6 2 3.6 3.8 7.2 5.4 11l3.8 8.7 0.7 1.7 18.4-0.5 26.4-0.7c1.1 0 2.2 0.3 3.2 0.8 2.1 1.1 3.5 3 3.6 5l3.5 47.3c0.1 1.1-0.2 2.1-0.9 2.9z" fill="#794d98"></path><path d="M692.2 591h13.3c-4.5-0.3-8.9-0.3-13.3 0z" fill="#6b4487"></path><path d="M789.7 654.7c-2.9-8.4-7.1-16.3-12.2-23.5-2-2.8-4.1-5.4-6.4-8-0.9-1-1.9-2.1-2.9-3.1-7.3-7.5-15.8-13.8-25.3-18.7-10.7-5.5-22.2-8.9-34.1-10.2l-3.3-0.3h-13.3c-6.7 0.5-13.3 1.6-19.8 3.6-11.9 3.5-22.6 9.2-31.9 16.9-3.2 2.7-6.2 5.6-9 8.6-3.1 3.4-5.8 7-8.3 10.9-1.5 2.4-3 4.9-4.3 7.4-5.3 10.4-8.4 21.6-9.3 33.3-0.9 12.1 0.8 24.1 4.9 35.8 4.1 11.6 10.3 22.2 18.6 31.5 1 1.2 2.1 2.3 3.2 3.4 7.3 7.4 15.7 13.6 25 18.4 1.1 0.6 2.2 1.1 3.4 1.6 9.8 4.5 20.1 7.4 30.7 8.6 12.3 1.3 24.6 0.2 36.4-3.3 4.8-1.4 9.3-3.2 13.7-5.3 6.5-3.1 12.6-7 18.2-11.7 3.1-2.6 6-5.4 8.7-8.3 5.1-5.6 9.4-11.8 12.9-18.6 5.3-10.4 8.4-21.6 9.3-33.3 0.9-12-0.8-24-4.9-35.7z m-16 34.3c-0.6 8.8-3 17.3-7 25.2-4 7.9-9.5 14.7-16.3 20.4-3.6 3-7.5 5.6-11.7 7.8-4 2.1-8.2 3.8-12.7 5.1-9.2 2.7-18.7 3.6-28.3 2.5-9.1-1-17.8-3.6-26.1-7.7-0.2-0.1-0.4-0.2-0.7-0.3-8.4-4.3-15.9-10.1-22.1-17-6.4-7.2-11.3-15.4-14.4-24.4-3.1-9-4.4-18.2-3.7-27.4 0.6-8.8 3-17.3 7-25.2 3.3-6.4 7.5-12.1 12.6-17 1.2-1.2 2.4-2.3 3.7-3.4 3.4-2.9 7.2-5.4 11.1-7.5 4.2-2.2 8.6-4.1 13.3-5.5 9.2-2.7 18.7-3.6 28.3-2.5 9.3 1 18.3 3.7 26.7 8 5.8 3 11.1 6.6 15.9 10.9 2.2 1.9 4.3 4 6.2 6.2 6.4 7.2 11.3 15.4 14.4 24.4 3.2 9 4.4 18.2 3.8 27.4z" fill="#6b4487"></path></g></svg>
+                            </div>
                             <h4 class="service"><b>Database Manager</b></h4>
-                            <p class="short-desc">In the world of data, precision is paramount. As a skilled database manager, I organize, secure, and optimize your data infrastructure. From designing database schemas to implementing efficient querying, I ensure your data is not just stored but serves as a strategic asset for your business.</p>
+                            <p class="short-desc">In database management, I design and optimize database using SQL technologies such as MySQL, PostgreSQL, and SQLite to ensure data integrity, reliability, and scalability for applications.</p>
                         </div>
                     </div>
 
-                    <div class=" col w-auto ">
-                        <div class="container service-item d-flex justify-content-center" style="background-color: #6d0ba9;">
-                            <img src="tools/sqlite.svg" class="tool" alt="">
-                            <img src="tools/mysql.svg" class="tool" alt="">
-                            <img src="tools/xampp.svg" class="tool" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class=" col w-auto service-item">
+                    <div class="w-5 service-item">
                         <div class="container">
-                            <h4 class="service"><b>Game Developer</b></h4>
-                            <p class="short-desc">Transforming ideas into interactive and captivating mobile games is my expertise. With a passion for innovation, I bring your gaming visions to life, combining cutting-edge technology with creative flair to deliver engaging and immersive experiences on mobile platforms.</p>
-                        </div>
-                    </div>
-
-                    <div class=" col w-auto">
-                        <div class="container service-item d-flex justify-content-center" style="background-color: #6d0ba9;">
-                            <img src="tools/unity.svg" class="tool" alt="">
-                            <img src="tools/c-sharp.svg" class="tool" alt="">
+                            <div class="d-flex justify-content-center m-2">
+                                <svg viewBox="0 0 1024 1024" style="width: 64px; height: 64px;" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M432.4 453.5l-17 46.7h34.4z" fill="#FFFFFF"></path><path d="M725.3 259.7H312.2c-16.5 0-30 13.5-30 30v413.1c0 16.5 13.5 30 30 30h413.1c16.5 0 30-13.5 30-30V289.7c0-16.6-13.5-30-30-30z m-98.8 164.5h25.4V550h-25.4V424.2z m-116.5 0h40.8c15.5 0 25.5 0.6 30.2 1.9 7.2 1.9 13.2 6 18.1 12.3 4.9 6.3 7.3 14.5 7.3 24.5 0 7.7-1.4 14.2-4.2 19.5s-6.4 9.4-10.7 12.4c-4.3 3-8.7 5-13.2 6-6.1 1.2-14.8 1.8-26.4 1.8h-16.6V550H510V424.2z m-90.7 0h26.9L496.5 550h-27.6l-11-28.6h-50.3L397.2 550h-27l49.1-125.8z m229.1 273.3H352.6c-19.4 0-35.1-15.7-35.1-35.1v-295c0-5.5 4.5-10 10-10s10 4.5 10 10v295c0 8.3 6.8 15.1 15.1 15.1h295.8c5.5 0 10 4.5 10 10s-4.4 10-10 10z" fill="#FFFFFF"></path><path d="M569.4 479.2c3.4-1.3 6-3.4 7.9-6.2 1.9-2.8 2.9-6.1 2.9-9.8 0-4.6-1.3-8.4-4-11.3-2.7-3-6.1-4.8-10.2-5.6-3-0.6-9.1-0.9-18.3-0.9h-12.3v35.7h13.9c10 0.1 16.7-0.6 20.1-1.9z" fill="#FFFFFF"></path><path d="M648.4 677.5H352.6c-8.3 0-15.1-6.8-15.1-15.1v-295c0-5.5-4.5-10-10-10s-10 4.5-10 10v295c0 19.4 15.7 35.1 35.1 35.1h295.8c5.5 0 10-4.5 10-10s-4.4-10-10-10z" fill="#6b4487"></path><path d="M865 386.5c11 0 20-9 20-20s-9-20-20-20h-69.7v-56.8c0-38.6-31.4-70-70-70h-27.8v-67.3c0-11-9-20-20-20s-20 9-20 20v67.3H611v-67.3c0-11-9-20-20-20s-20 9-20 20v67.3h-46.5v-67.3c0-11-9-20-20-20s-20 9-20 20v67.3H438v-67.3c0-11-9-20-20-20s-20 9-20 20v67.3h-85.8c-38.6 0-70 31.4-70 70v56.8h-69.7c-11 0-20 9-20 20s9 20 20 20h69.7V433h-69.7c-11 0-20 9-20 20s9 20 20 20h69.7v46.5h-69.7c-11 0-20 9-20 20s9 20 20 20h69.7V606h-69.7c-11 0-20 9-20 20s9 20 20 20h69.7v56.8c0 38.6 31.4 70 70 70H343v72.5c0 11 9 20 20 20s20-9 20-20v-72.5h46.5v72.5c0 11 9 20 20 20s20-9 20-20v-72.5H516v72.5c0 11 9 20 20 20s20-9 20-20v-72.5h46.5v72.5c0 11 9 20 20 20s20-9 20-20v-72.5h82.8c38.6 0 70-31.4 70-70V646H865c11 0 20-9 20-20s-9-20-20-20h-69.7v-46.5H865c11 0 20-9 20-20s-9-20-20-20h-69.7V473H865c11 0 20-9 20-20s-9-20-20-20h-69.7v-46.5H865zM755.3 702.7c0 16.5-13.5 30-30 30H312.2c-16.5 0-30-13.5-30-30v-413c0-16.5 13.5-30 30-30h413.1c16.5 0 30 13.5 30 30v413z" fill="#794d98"></path><path d="M407.6 521.4h50.3l11 28.6h27.6l-50.4-125.8h-26.9l-49 125.8h27l10.4-28.6z m24.8-67.9l17.3 46.7h-34.3l17-46.7zM535.4 502.6H552c11.5 0 20.3-0.6 26.4-1.8 4.5-1 8.9-3 13.2-6 4.3-3 7.9-7.1 10.7-12.4s4.2-11.8 4.2-19.5c0-10-2.4-18.2-7.3-24.5-4.9-6.3-10.9-10.4-18.1-12.3-4.7-1.3-14.8-1.9-30.2-1.9H510V550h25.4v-47.4z m0-57.1h12.3c9.2 0 15.2 0.3 18.3 0.9 4.1 0.7 7.5 2.6 10.2 5.6 2.7 3 4 6.8 4 11.3 0 3.7-1 7-2.9 9.8-1.9 2.8-4.6 4.9-7.9 6.2-3.4 1.3-10.1 2-20.1 2h-13.9v-35.8zM626.5 424.2h25.4V550h-25.4z" fill="#794d98"></path></g></svg>
+                            </div>
+                            <h4 class="service"><b>API Developer</b></h4>
+                            <p class="short-desc">I focus on creating API's that are well-documented, secure, and scalable, utilizing industry best practices to ensure reliability and peformance for developers and end users interacting with the applications.</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="tools">
+            <p id="remarks3">Tools and Technologies</p>
+            <div class="d-flex flex-wrap">
+                <!-- PYTHON -->
+                <div class="tool-item">
+                    <svg class="tool-icon" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                        <g id="SVGRepo_iconCarrier"> 
+                            <path fill="#FFFFFF" d="M13.275 15.88h5.417c1.508 0 2.712-1.241 2.712-2.756v-5.164c0-1.47-1.24-2.574-2.712-2.819-0.932-0.155-1.898-0.226-2.825-0.221s-1.813 0.083-2.592 0.221c-2.295 0.405-2.712 1.254-2.712 2.819v2.067h5.423v0.689h-7.459c-1.576 0-2.956 0.947-3.388 2.75-0.498 2.066-0.52 3.355 0 5.512 0.385 1.606 1.306 2.75 2.882 2.75h1.865v-2.478c0-1.79 1.549-3.369 3.388-3.369zM12.933 8.649c-0.562 0-1.018-0.461-1.018-1.030 0-0.572 0.455-1.037 1.018-1.037 0.56 0 1.018 0.465 1.018 1.037 0 0.57-0.457 1.030-1.018 1.030zM26.826 13.465c-0.389-1.569-1.133-2.75-2.712-2.75h-2.035v2.408c0 1.867-1.583 3.439-3.388 3.439h-5.417c-1.484 0-2.712 1.27-2.712 2.756v5.164c0 1.47 1.278 2.334 2.712 2.756 1.717 0.505 3.363 0.596 5.417 0 1.365-0.395 2.712-1.191 2.712-2.756v-2.067h-5.417v-0.689h8.129c1.576 0 2.163-1.099 2.712-2.75 0.566-1.699 0.542-3.332 0-5.512zM19.033 23.794c0.562 0 1.018 0.461 1.018 1.030 0 0.572-0.456 1.037-1.018 1.037-0.56 0-1.018-0.465-1.018-1.037 0-0.57 0.457-1.030 1.018-1.030z"></path>
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- JAVA -->
+                <div class="tool-item">
+                    <svg fill="#FFFFFF" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" stroke="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="5151e0c8492e5103c096af88a51e8d81"> <path display="inline" d="M193.918,208.369c-4.729-10.456-6.849-22.652-3.236-33.731c3.612-11.327,11.703-20.413,19.794-28.878 c22.525-22.531,50.285-39.085,72.316-61.986c12.197-12.573,22.278-27.634,25.762-44.937c2.864-12.695,1.496-25.764-1.117-38.337 c11.7,13.319,15.559,32.363,12.197,49.541c-3.608,19.292-14.316,36.344-26.886,51.031c-10.081,11.827-21.659,22.282-33.731,31.993 c-14.065,11.327-27.88,23.524-36.716,39.457c-7.472,12.943-9.215,28.876-4.11,42.942c8.341,24.146,27.756,42.071,38.338,64.848 c-11.703-10.332-23.152-21.036-33.86-32.361C211.471,236.001,200.889,223.307,193.918,208.369z M257.398,189.448 c-2.115,19.792,8.213,38.462,20.539,53.151c5.972,6.596,11.076,14.687,11.323,23.899c0.251,12.318-6.716,23.774-15.684,31.861 c2.119-0.246,3.612-2.115,5.355-3.11c13.443-8.589,26.385-19.418,32.982-34.227c4.357-10.083,3.362-22.034-2.362-31.371 c-6.724-10.953-15.559-20.662-20.786-32.61c-2.867-6.721-3.862-14.562-1.496-21.657c3.114-9.583,9.834-17.426,16.93-24.272 c19.54-18.544,43.189-31.743,65.844-46.179c-28.629,8.214-56.883,19.542-81.03,37.343 C273.702,153.727,259.515,169.658,257.398,189.448z M393.447,283.052c13.568,0.748,26.882,10.704,29.374,24.397 c2.366,11.825-3.358,23.524-10.705,32.485c-12.075,14.438-28.382,24.771-44.807,33.609c-1.622,0.991-2.99,2.237-4.235,3.608 c21.659-5.478,43.314-13.689,60.867-27.756c9.705-8.091,18.294-18.799,20.163-31.619c1.743-11.076-2.86-22.528-11.077-29.871 c-9.96-9.09-24.021-12.448-37.218-10.704c-7.593,0.995-15.931,2.613-21.158,8.961C380.877,284.921,386.971,282.429,393.447,283.052 z M123.22,318.647c16.303,4.357,33.108,5.603,49.787,6.724c14.936,0.995,29.875,1.246,44.937,1.12 c38.833-0.619,77.916-3.236,116.003-11.699c3.608-0.87,7.593-1.493,10.833-3.733c6.347-4.11,13.313-7.347,20.162-10.583 c-30.995,4.979-62.113,9.215-93.478,11.205c-31.74,1.991-63.731,3.236-95.593,1.121c-9.086-0.87-18.423-1.371-26.886-4.858 c-1.994-0.87-4.733-2.609-3.738-5.227c1.869-3.361,5.603-4.977,8.839-6.72c13.694-6.473,28.629-10.081,43.193-14.313 c-25.021-0.376-49.916,5.971-72.814,15.806c-5.105,2.491-10.83,4.481-14.936,8.714c-1.622,1.739-1.622,4.732,0.247,6.222 C113.511,315.787,118.487,317.28,123.22,318.647z M324.864,352.88c-21.784,3.859-43.694,7.472-65.726,8.589 c-24.147,1.618-48.294,0.247-72.191-2.241c-4.604-0.623-9.211-1.368-13.317-3.483c-2.116-1.246-4.231-3.236-4.106-5.854 c0.247-4.106,3.73-6.967,6.222-9.956c-7.715,2.739-15.434,5.599-21.906,10.708c-2.742,2.116-5.478,5.474-4.733,9.208 c1.125,4.356,5.356,6.97,9.09,8.96c9.208,4.733,19.54,6.846,29.625,8.714c25.511,4.11,51.527,4.235,77.167,2.488 c27.141-2.115,54.148-6.594,80.411-14.313C337.932,362.342,330.836,358.479,324.864,352.88z M188.068,395.951 c-6.97,1.99-14.066,4.357-19.79,8.957c-2.868,2.241-5.105,6.104-3.734,9.713c1.743,4.604,6.1,7.347,10.203,9.705 c10.708,5.854,22.78,8.589,34.604,10.708c26.765,4.229,54.27,3.608,80.908-1.12c15.806-2.989,31.615-7.221,46.301-13.815 c-9.584-3.984-18.917-8.467-27.878-13.693c-15.559,2.738-31.246,5.603-47.178,6.598c-21.032,1.618-42.319-0.125-63.355-2.738 c-4.98-1.121-11.202-1.618-14.563-5.976C181.847,400.677,185.828,398.063,188.068,395.951z M358.345,475.982 c17.424-3.604,34.977-7.719,50.908-15.806c4.976-2.867,11.076-5.979,12.698-11.95c0.87-5.725-5.105-8.714-9.337-11.08 c2.613,2.993,4.356,7.347,1.74,10.83c-4.357,5.853-11.821,8.091-18.42,10.332c-20.66,5.85-42.072,8.216-63.355,10.582 c-56.385,5.102-113.146,6.348-169.528,1.618c-18.92-1.994-38.217-4.109-56.264-10.829c-2.86-1.246-7.217-2.492-7.217-6.352 c1.117-3.354,4.357-5.227,7.217-6.845c12.945-6.595,27.384-10.207,41.822-11.077c-4.228-2.491-9.208-2.738-14.062-2.613 c-12.076,0.373-23.9,3.483-35.349,7.347c-9.834,3.604-19.916,7.59-27.76,14.811c-3.111,2.735-5.971,7.962-2.739,11.699 c4.98,5.353,12.699,6.72,19.54,8.338c38.338,6.599,77.171,10.328,116.011,11.699C255.781,488.184,307.684,485.942,358.345,475.982z M409.378,482.706c-23.402,7.468-47.672,11.574-71.822,14.936c-41.696,5.227-83.769,6.845-125.716,5.603 c-25.515-0.995-51.03-2.738-76.176-6.974c5.85,3.984,13.071,5.227,19.794,7.096c28.257,5.976,57.255,7.096,86.01,7.966 c42.19,0.748,84.387-0.87,125.962-7.468c19.669-3.48,39.459-7.715,57.13-16.927c9.215-4.854,18.552-12.326,20.163-23.152 C435.391,473.741,421.951,478.349,409.378,482.706z"> </path> </g> </g></svg>
+                </div>
+
+                <!-- HTML -->
+                <div class="tool-item">
+                    <svg fill="#FFFFFF" viewBox="0 0 24 24" version="1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M13.1 3.5l.7 1.1.7-1.1v1.5h1v-3h-1l-.7 1.1-.6-1.1h-1.1v3h1zM18.4 5v-1h-1.4v-2h-1v3zM9.8 5h1v-2h.9v-1h-2.8v1h.9zM6.6 4h.9v1h1v-3h-1v1h-.9v-1h-1v3h1zM5 6l1.2 14.4 5.8 1.6 5.8-1.6 1.2-14.4h-14zm11.3 4.6h-6.8l.2 1.8h6.3999999999999995l-.5 5.5-3.6 1-3.6-1-.3-2.9h1.8l.1 1.5 2 .5 2-.5.2-2.3h-6.2l-.5-5.3h9l-.2 1.7z"></path></g></svg>
+                </div>
+
+                <!-- CSS -->
+                <div class="tool-item">
+                    <svg fill="#FFFFFF" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="c133de6af664cd4f011a55de6b001a2b"> <path display="inline" d="M204.064,46.682v22.018h-56.302V0.501h56.302v24.13h-32.172v22.051H204.064z M261.941,24.631h22.492 V0.501h-56.308c0,0,0,12.112,0,24.13c7.533,7.533,11.461,11.139,22.356,22.034c-6.369,0-22.356,0.022-22.356,0.021v22.014h56.308 V46.682L261.941,24.631z M341.746,24.631h22.49V0.501H307.93c0,0,0,12.112,0,24.13c7.531,7.533,11.461,11.139,22.355,22.034 c-6.365,0-22.355,0.022-22.355,0.021v22.014h56.307V46.682L341.746,24.631z M438.395,101.112l-34.203,370.486l-148.193,39.9 l-148.196-39.9L73.605,101.112H438.395z M369.477,176.444H255.865h-115.62l5.529,44.739h110.091h6.184l-6.184,2.574 l-106.067,44.177l3.518,43.73l102.549,0.333l54.963,0.175l-3.521,58.311l-51.442,14.484v-0.046l-0.422,0.116l-49.684-12.542 l-3.015-36.195h-0.164h-46.085h-0.162l6.032,69.876l93.5,27.649v-0.05l0.168,0.05l93-27.146L361.1,267.935H255.865h-0.26 l0.26-0.112l109.086-46.639L369.477,176.444z"> </path> </g> </g></svg>
+                </div>
+
+                <!-- JAVASCRIPT -->
+                <div class="tool-item">
+                    <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFFFFF">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g id="SVGRepo_iconCarrier"> <title>javascript [#155]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-420.000000, -7479.000000)" fill="#FFFFFF"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M379.328,7337.432 C377.583,7337.432 376.455,7336.6 375.905,7335.512 L375.905,7335.512 L377.435,7334.626 C377.838,7335.284 378.361,7335.767 379.288,7335.767 C380.066,7335.767 380.563,7335.378 380.563,7334.841 C380.563,7334.033 379.485,7333.717 378.724,7333.391 C377.368,7332.814 376.468,7332.089 376.468,7330.558 C376.468,7329.149 377.542,7328.075 379.221,7328.075 C380.415,7328.075 381.275,7328.491 381.892,7329.578 L380.429,7330.518 C380.107,7329.941 379.758,7329.713 379.221,7329.713 C378.67,7329.713 378.321,7330.062 378.321,7330.518 C378.321,7331.082 378.67,7331.31 379.476,7331.659 C381.165,7332.383 382.443,7332.952 382.443,7334.814 C382.443,7336.506 381.114,7337.432 379.328,7337.432 L379.328,7337.432 Z M375,7334.599 C375,7336.546 373.801,7337.575 372.136,7337.575 C370.632,7337.575 369.731,7337 369.288,7336 L369.273,7336 L369.266,7336 L369.262,7336 L370.791,7334.931 C371.086,7335.454 371.352,7335.825 371.996,7335.825 C372.614,7335.825 373,7335.512 373,7334.573 L373,7328 L375,7328 L375,7334.599 Z M364,7339 L384,7339 L384,7319 L364,7319 L364,7339 Z" id="javascript-[#155]"> </path> </g> </g> </g> </g>
+                    </svg>
+                </div>
+
+                <!-- KOTLIN -->
+                <div class="tool-item">
+                    <svg fill="#FFFFFF" viewBox="0 0 32.00 32.00" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="0.00032">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g id="SVGRepo_iconCarrier"> <path d="M1.734 32l15.068-15.333 15.198 15.333zM0 0h16l-16 16.667zM17.865 0l-17.865 18.667v13.333l32-32z"/> </g>
+                    </svg>
+                </div>
+
+                <!-- LARAVEL -->
+                <div class="tool-item">
+                    <svg fill="#FFFFFF" viewBox="0 0 32.00 32.00" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="0.00032">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g id="SVGRepo_iconCarrier"> <title>laravel</title> <path d="M13.143 23.585l10.46-5.97-4.752-2.736-10.453 6.019zM24.084 11.374l-4.757-2.736v5.417l4.758 2.737zM24.559 5.078l-4.756 2.736 4.756 2.736 4.755-2.737zM9.911 18.928l2.76-1.589v-11.934l-4.758 2.738v11.934zM7.437 1.846l-4.756 2.737 4.756 2.737 4.753-2.737zM2.204 5.406v18.452l10.464 6.022v-5.471l-5.472-3.096c-0.018-0.013-0.032-0.027-0.051-0.039-0.014-0.013-0.030-0.023-0.044-0.034l-0.001-0.003c-0.015-0.015-0.028-0.031-0.039-0.049l-0.001-0.001c-0.014-0.013-0.025-0.028-0.035-0.045l-0.001-0.001h-0.003c-0.008-0.015-0.016-0.035-0.024-0.055l-0.001-0.004c-0.007-0.015-0.015-0.032-0.022-0.051l-0.001-0.003c-0.004-0.020-0.008-0.045-0.010-0.070l-0-0.002c-0.003-0.015-0.006-0.033-0.008-0.051l-0-0.001v-12.759l-2.757-1.59zM24.085 23.857v-5.422l-10.464 5.974v5.47zM29.789 14.055v-5.417l-4.756 2.737v5.417zM30.725 7.69c0.011 0.038 0.018 0.081 0.018 0.126v0 6.513c-0 0.176-0.095 0.329-0.237 0.411l-0.002 0.001-5.468 3.149v6.241c-0 0.175-0.095 0.328-0.236 0.411l-0.002 0.001-11.416 6.57c-0.024 0.013-0.052 0.025-0.081 0.033l-0.003 0.001-0.030 0.013c-0.036 0.011-0.078 0.017-0.121 0.017s-0.085-0.006-0.125-0.018l0.003 0.001c-0.015-0.004-0.027-0.009-0.039-0.016l0.001 0.001c-0.031-0.011-0.057-0.021-0.082-0.033l0.004 0.002-11.413-6.57c-0.144-0.084-0.239-0.237-0.239-0.412v0-19.548c0-0.044 0.007-0.087 0.019-0.127l-0.001 0.003c0.004-0.015 0.013-0.025 0.018-0.040 0.009-0.029 0.019-0.053 0.030-0.076l-0.001 0.003c0.008-0.016 0.018-0.030 0.029-0.042l-0 0 0.042-0.057 0.047-0.034c0.018-0.015 0.034-0.030 0.052-0.043h0.001l5.708-3.285c0.068-0.040 0.15-0.064 0.237-0.064s0.169 0.024 0.239 0.065l-0.002-0.001 5.71 3.285c0.019 0.013 0.035 0.027 0.051 0.042l-0-0 0.048 0.034c0.016 0.018 0.025 0.038 0.042 0.057 0.012 0.012 0.022 0.026 0.031 0.041l0.001 0.001c0.010 0.020 0.020 0.044 0.029 0.069l0.001 0.004 0.016 0.040c0.011 0.035 0.018 0.076 0.018 0.118 0 0.002 0 0.004-0 0.006v-0 12.208l4.756-2.737v-6.241c0-0.001 0-0.002 0-0.002 0-0.043 0.006-0.085 0.017-0.125l-0.001 0.003c0.004-0.013 0.013-0.025 0.016-0.040 0.010-0.030 0.020-0.054 0.032-0.078l-0.002 0.004c0.009-0.015 0.023-0.025 0.032-0.042 0.015-0.019 0.027-0.038 0.042-0.054 0.014-0.013 0.029-0.025 0.045-0.035l0.001-0.001c0.018-0.013 0.033-0.029 0.052-0.040h0.001l5.708-3.286c0.068-0.040 0.15-0.064 0.237-0.064s0.169 0.024 0.239 0.065l-0.002-0.001 5.708 3.286c0.020 0.013 0.034 0.027 0.053 0.039 0.015 0.013 0.032 0.023 0.046 0.035 0.016 0.018 0.028 0.038 0.043 0.056 0.011 0.012 0.021 0.026 0.030 0.040l0.001 0.001c0.012 0.022 0.022 0.047 0.030 0.073l0.001 0.003c0.008 0.012 0.014 0.025 0.019 0.039l0 0.001z"/> </g>
+                    </svg>
+                </div>
+
+                <!-- NODEJS -->
+                <div class="tool-item">
+                    <svg viewBox="0 0 16.00 16.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="0.00016"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.128"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="nonzero" clip-rule="nonzero" d="M7.58638 0.102166C7.8199 -0.0340553 8.10867 -0.0340553 8.34219 0.102166L14.5565 3.72717C14.7869 3.86157 14.9286 4.10825 14.9286 4.375V11.625C14.9286 11.8918 14.7869 12.1384 14.5565 12.2728L8.34219 15.8978C8.10867 16.0341 7.8199 16.0341 7.58638 15.8978L6.03281 14.9916C5.67502 14.7829 5.55417 14.3236 5.76288 13.9658C5.97159 13.6081 6.43083 13.4872 6.78862 13.6959L7.96429 14.3817L13.4286 11.1942V4.80578L7.96429 1.61828L2.5 4.80578V11.1942L3.6168 11.8457C3.96098 11.9561 4.38611 11.9831 4.68576 11.8507C4.82477 11.7893 4.95031 11.6893 5.04968 11.5107C5.15426 11.3227 5.25 11.0098 5.25 10.5V5.25C5.25 4.83579 5.58579 4.5 6 4.5C6.41421 4.5 6.75 4.83579 6.75 5.25V10.5C6.75 11.1902 6.62104 11.7716 6.36047 12.2399C6.09471 12.7176 5.71466 13.036 5.29192 13.2228C4.48562 13.579 3.59523 13.433 3.04999 13.2371C3.00686 13.2216 2.96525 13.2022 2.92567 13.1791L1.3721 12.2728C1.14168 12.1384 1 11.8918 1 11.625V4.375C1 4.10825 1.14168 3.86157 1.3721 3.72717L7.58638 0.102166ZM8.24655 5.28323C8.64339 4.81081 9.26318 4.5 10.1042 4.5C10.8847 4.5 11.4792 4.76756 11.8815 5.19314C12.166 5.49417 12.1527 5.96885 11.8516 6.25338C11.5506 6.53792 11.0759 6.52455 10.7914 6.22352C10.7038 6.13087 10.5202 6 10.1042 6C9.66182 6 9.47952 6.14753 9.39511 6.24802C9.28615 6.37774 9.25 6.54184 9.25 6.625C9.25 6.70816 9.28615 6.87226 9.39511 7.00198C9.47952 7.10247 9.66182 7.25 10.1042 7.25C10.1782 7.25 10.2497 7.26073 10.3173 7.28072C10.9368 7.37001 11.4089 7.64784 11.7326 8.03323C12.1049 8.47643 12.2292 8.99983 12.2292 9.375C12.2292 9.75017 12.1049 10.2736 11.7326 10.7168C11.3358 11.1892 10.716 11.5 9.87501 11.5C9.0945 11.5 8.49996 11.2324 8.09768 10.8069C7.81315 10.5058 7.82652 10.0311 8.12755 9.74662C8.42857 9.46208 8.90325 9.47546 9.18779 9.77648C9.27536 9.86913 9.459 10 9.87501 10C10.3174 10 10.4997 9.85247 10.5841 9.75198C10.693 9.62226 10.7292 9.45816 10.7292 9.375C10.7292 9.29184 10.693 9.12774 10.5841 8.99802C10.4997 8.89753 10.3174 8.75 9.87501 8.75C9.80097 8.75 9.72943 8.73927 9.66188 8.71928C9.04237 8.62999 8.57028 8.35216 8.24655 7.96677C7.87427 7.52357 7.75 7.00017 7.75 6.625C7.75 6.24983 7.87427 5.72643 8.24655 5.28323Z" fill="#FFFFFF"></path> </g></svg>
+                </div>
+
+                <!-- PHP -->
+                <div class="tool-item">
+                    <svg fill="#FFFFFF" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" stroke="#FFFFFF">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g id="SVGRepo_iconCarrier"> <g id="5151e0c8492e5103c096af88a51e2ea6"> <path display="inline" d="M401.054,224c3.714,4.115,4.595,11.181,2.653,21.19c-2.029,10.425-5.935,17.862-11.723,22.32 c-5.793,4.458-14.602,6.687-26.432,6.687h-17.849l10.957-56.37h20.103C389.913,217.827,397.34,219.886,401.054,224z M149.754,217.827h-20.103l-10.958,56.37h17.848c11.827,0,20.639-2.229,26.432-6.687c5.789-4.458,9.694-11.896,11.723-22.32 c1.942-10.01,1.06-17.075-2.653-21.19C168.33,219.886,160.903,217.827,149.754,217.827z M511.5,256 c0,74.229-114.393,134.403-255.5,134.403S0.5,330.229,0.5,256c0-74.228,114.393-134.403,255.5-134.403S511.5,181.772,511.5,256z M198.542,265.286c3.04-5.448,5.203-11.461,6.483-18.037c3.102-15.967,0.761-28.403-7.024-37.313 c-7.781-8.91-20.165-13.363-37.136-13.363h-56.423L78.265,331.261h29.342l6.958-35.805h25.134c11.087,0,20.21-1.164,27.372-3.497 c7.161-2.329,13.669-6.233,19.528-11.719C191.514,275.72,195.493,270.738,198.542,265.286z M301.814,295.456l12.181-62.682 c2.479-12.747,0.619-21.971-5.572-27.664c-6.196-5.688-17.449-8.537-33.768-8.537h-25.933l6.961-35.81h-29.11l-26.182,134.692 h29.11l14.996-77.165h23.267c7.448,0,12.317,1.232,14.604,3.698c2.287,2.467,2.773,7.091,1.455,13.869l-11.581,59.598H301.814z M427.011,209.937c-7.78-8.91-20.164-13.363-37.135-13.363h-56.424l-26.178,134.688h29.343l6.957-35.805h25.135 c11.086,0,20.21-1.164,27.371-3.497c7.161-2.329,13.669-6.233,19.528-11.719c4.92-4.521,8.896-9.502,11.943-14.954 c3.044-5.448,5.202-11.461,6.483-18.037C437.137,231.282,434.796,218.846,427.011,209.937z"> </path> </g> </g>
+                        </svg>
+                </div>
+
+                <!-- REACT -->
+                <div class="tool-item">
+                    <svg width="800px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" fill="#FFFFFF" stroke="#FFFFFF">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.024"/>
+                        <g id="SVGRepo_iconCarrier"> <rect id="Icons" x="-64" y="-64" width="1280" height="800" style="fill:none;"/> <g id="Icons1" serif:id="Icons"> <g id="Strike"> </g> <g id="H1"> </g> <g id="H2"> </g> <g id="H3"> </g> <g id="list-ul"> </g> <g id="hamburger-1"> </g> <g id="hamburger-2"> </g> <g id="list-ol"> </g> <g id="list-task"> </g> <g id="trash"> </g> <g id="vertical-menu"> </g> <g id="horizontal-menu"> </g> <g id="sidebar-2"> </g> <g id="Pen"> </g> <g id="Pen1" serif:id="Pen"> </g> <g id="clock"> </g> <g id="external-link"> </g> <g id="hr"> </g> <g id="info"> </g> <g id="warning"> </g> <g id="plus-circle"> </g> <g id="minus-circle"> </g> <g id="vue"> </g> <g id="cog"> </g> <g id="logo"> </g> <g id="radio-check"> </g> <g id="eye-slash"> </g> <g id="eye"> </g> <g id="toggle-off"> </g> <g id="shredder"> </g> <g id="spinner--loading--dots-" serif:id="spinner [loading, dots]"> </g> <g id="react"> <circle cx="32.001" cy="31.955" r="4.478" style="fill:#444444;"/> <path d="M32.33,22.516c7.635,0.052 15.965,0.609 21.683,5.708c0.168,0.15 0.33,0.306 0.488,0.467c1.349,1.375 2.054,3.595 0.965,5.422c-2.234,3.751 -7.23,5.387 -12.067,6.394c-7.234,1.506 -14.798,1.518 -22.029,0.192c-4.161,-0.764 -8.416,-2.103 -11.373,-4.904c-1.151,-1.09 -2.135,-2.524 -1.981,-4.12c0.25,-2.582 2.727,-4.239 4.812,-5.361c5.791,-3.116 12.847,-3.813 19.502,-3.798Zm-0.554,1.173c-7.224,0.049 -15.043,0.51 -20.621,5.129c-0.195,0.161 -0.383,0.33 -0.564,0.507c-0.117,0.114 -0.23,0.233 -0.339,0.355c-0.979,1.1 -1.316,2.867 -0.392,4.188c0.93,1.329 2.342,2.288 3.796,3.07c5.438,2.924 11.864,3.443 18.129,3.465c6.343,0.023 12.884,-0.555 18.487,-3.452c2.232,-1.155 4.744,-2.851 4.655,-5.035c-0.082,-2.004 -2.036,-3.242 -3.499,-4.126c-0.396,-0.239 -0.803,-0.46 -1.216,-0.668c-5.562,-2.787 -12.08,-3.447 -18.436,-3.433Z" style="fill:#444444;"/> <path d="M42.115,10.703c2.793,0.071 4.24,3.429 4.431,5.909c0.038,0.493 0.052,0.988 0.046,1.483c-0.006,0.536 -0.035,1.072 -0.082,1.606c-0.589,6.612 -3.608,12.909 -7.163,18.724c-3.477,5.688 -7.717,11.36 -13.485,13.996c-1.907,0.872 -4.175,1.41 -5.863,0.437c-2.314,-1.333 -2.567,-4.451 -2.524,-6.816c0.011,-0.581 0.049,-1.162 0.109,-1.741c0.889,-8.56 5.228,-16.669 10.658,-23.655c3.168,-4.076 6.937,-8.119 11.632,-9.583c0.739,-0.231 1.326,-0.371 2.241,-0.36Zm-0.134,1.172c-3.279,0.052 -6.223,2.482 -8.83,5.007c-6.854,6.637 -11.905,15.464 -13.937,24.721c-0.157,0.717 -0.289,1.439 -0.386,2.166c-0.075,0.563 -0.13,1.129 -0.159,1.697c-0.023,0.452 -0.031,0.905 -0.017,1.358c0.01,0.354 0.033,0.708 0.072,1.06c0.029,0.269 0.068,0.537 0.117,0.803c0.037,0.197 0.08,0.393 0.13,0.588c0.041,0.158 0.087,0.315 0.139,0.471c0.409,1.233 1.463,2.411 2.878,2.45c3.301,0.09 6.409,-2.317 9.096,-4.933c4.717,-4.591 8.232,-10.36 10.978,-16.424c2.216,-4.896 4.243,-10.218 3.111,-15.607c-0.043,-0.204 -0.093,-0.406 -0.15,-0.606c-0.047,-0.163 -0.1,-0.324 -0.158,-0.483c-0.44,-1.199 -1.475,-2.271 -2.884,-2.268Z" style="fill:#444444;"/> <path d="M22.109,10.747c3.564,0.069 6.765,2.488 9.607,5.197c5.186,4.943 9.011,11.231 11.913,17.849c2.248,5.127 4.316,10.882 2.478,16.292c-0.579,1.705 -2.044,3.265 -3.997,3.305c-3.581,0.072 -6.9,-2.532 -9.78,-5.335c-7.225,-7.034 -12.589,-16.32 -14.427,-26.168c-0.132,-0.704 -0.237,-1.414 -0.309,-2.127c-0.059,-0.582 -0.096,-1.167 -0.106,-1.752c-0.008,-0.472 0.002,-0.944 0.035,-1.414c0.022,-0.314 0.054,-0.626 0.097,-0.937c0.041,-0.292 0.093,-0.583 0.158,-0.871c0.043,-0.191 0.091,-0.38 0.146,-0.568c0.539,-1.843 1.941,-3.485 4.185,-3.471Zm-0.135,1.173c-2.087,0.046 -3.042,2.507 -3.234,4.234c-0.039,0.354 -0.063,0.711 -0.074,1.068c-0.014,0.456 -0.008,0.913 0.015,1.369c0.328,6.599 3.278,12.979 6.838,18.821c3.352,5.5 7.4,10.978 12.968,13.794c1.608,0.813 3.562,1.452 4.951,0.684c1.742,-0.964 1.956,-3.261 2.049,-4.973c0.025,-0.466 0.028,-0.934 0.013,-1.401c-0.018,-0.586 -0.064,-1.171 -0.133,-1.753c-0.642,-5.437 -3.05,-10.582 -5.816,-15.444c-3.442,-6.048 -7.659,-12.076 -13.627,-15.225c-1.236,-0.652 -2.574,-1.185 -3.95,-1.174Z" style="fill:#444444;"/> </g> <g id="check-selected"> </g> <g id="turn-off"> </g> <g id="code-block"> </g> <g id="user"> </g> <g id="coffee-bean"> </g> <g id="coffee-beans"> <g id="coffee-bean1" serif:id="coffee-bean"> </g> </g> <g id="coffee-bean-filled"> </g> <g id="coffee-beans-filled"> <g id="coffee-bean2" serif:id="coffee-bean"> </g> </g> <g id="clipboard"> </g> <g id="clipboard-paste"> </g> <g id="clipboard-copy"> </g> <g id="Layer1"> </g> </g> </g>
+                        </svg>
+                </div>
+
+                <!-- SQLITE -->
+                <div class="tool-item">
+                    <svg fill="#FFFFFF" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="0.00024000000000000003">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g id="SVGRepo_iconCarrier"> <title>sqlite</title> <path d="M4.884 2.334c-1.265 0.005-2.289 1.029-2.293 2.294v20.754c0.004 1.264 1.028 2.288 2.293 2.292h11.769c-0.056-0.671-0.088-1.452-0.088-2.241 0-0.401 0.008-0.801 0.025-1.198l-0.002 0.057c-0.008-0.077-0.014-0.176-0.020-0.25q-0.229-1.498-0.591-2.972c-0.119-0.504-0.277-0.944-0.478-1.36l0.017 0.039c-0.080-0.126-0.127-0.279-0.127-0.443 0-0.034 0.002-0.068 0.006-0.101l-0 0.004c0.003-0.173 0.020-0.339 0.049-0.501l-0.003 0.019c0.088-0.523 0.19-0.963 0.314-1.394l-0.022 0.088 0.271-0.035c-0.021-0.044-0.018-0.081-0.039-0.121l-0.051-0.476q0.224-0.751 0.477-1.492l0.25-0.024c-0.010-0.020-0.012-0.047-0.023-0.066l-0.054-0.395c1.006-4.731 3.107-8.864 6.029-12.272l-0.031 0.037c0.082-0.086 0.166-0.16 0.247-0.242zM28.094 1.655c-1.29-1.15-2.849-0.687-4.39 0.68q-0.356 0.319-0.684 0.669c-2.8 3.294-4.843 7.319-5.808 11.747l-0.033 0.18c0.261 0.551 0.494 1.201 0.664 1.876l0.016 0.075q0.115 0.436 0.205 0.878s-0.024-0.089-0.12-0.37l-0.062-0.182q-0.019-0.050-0.041-0.1c-0.172-0.4-0.647-1.243-0.857-1.611-0.179 0.529-0.337 1.022-0.47 1.47 0.413 0.863 0.749 1.867 0.959 2.917l0.014 0.083s-0.031-0.124-0.184-0.552c-0.342-0.739-0.664-1.338-1.015-1.919l0.050 0.089c-0.185 0.464-0.292 1.001-0.292 1.564 0 0.1 0.003 0.199 0.010 0.297l-0.001-0.013c0.219 0.426 0.401 0.921 0.519 1.439l0.008 0.043c0.357 1.375 0.606 3.049 0.606 3.049l0.021 0.28c-0.015 0.342-0.023 0.744-0.023 1.147 0 0.805 0.034 1.602 0.101 2.39l-0.007-0.103c0.058 1.206 0.283 2.339 0.651 3.406l-0.026-0.086 0.194-0.105c-0.346-1.193-0.545-2.564-0.545-3.981 0-0.344 0.012-0.684 0.035-1.022l-0.003 0.046c0.221-3.782 0.964-7.319 2.158-10.641l-0.083 0.264c1.655-4.9 4.359-9.073 7.861-12.417l0.012-0.011c-2.491 2.249-5.863 9.535-6.873 12.232-0.963 2.42-1.798 5.294-2.365 8.263l-0.048 0.305c0.664-1.639 1.914-2.926 3.483-3.622l0.042-0.017s1.321-1.63 2.864-3.956c-1.195 0.25-2.184 0.521-3.15 0.843l0.199-0.057c-0.75 0.314-0.952 0.421-0.952 0.421 1.288-0.791 2.777-1.515 4.337-2.092l0.178-0.058c2.867-4.515 5.991-10.929 2.845-13.736z"/> </g>
+                        </svg>
+                </div>
+
+                <!-- UNITY -->
+                <div class="tool-item">
+                    <svg fill="#FFFFFF" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="0.00024000000000000003">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g id="SVGRepo_iconCarrier">
+                        <path d="m15.266 12.001 4.2-7.249 2.03 7.253-2.03 7.25-4.2-7.25zm-2.047 1.177 4.201 7.254-7.316-1.876-5.285-5.378zm4.2-9.608-4.2 7.253h-8.4l5.285-5.378 7.314-1.875zm6 5.963-2.566-9.533-9.564 2.555-1.416 2.489-2.873-.021-7 6.978 7 6.977 2.871-.022 1.418 2.489 9.564 2.554 2.56-9.531-1.453-2.468z"/>
+                        </g>
+                        </svg>
+                </div>
+
+                <!-- POSTMAN -->
+                <div class="tool-item">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg fill="#FFFFFF"viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.036 0.131c-8.765-1.12-16.781 5.067-17.905 13.833-1.12 8.765 5.067 16.781 13.833 17.905 8.765 1.12 16.781-5.067 17.9-13.833 1.125-8.765-5.061-16.781-13.828-17.905zM21.328 10.115c-0.297 0-0.579 0.12-0.787 0.333l-5.937 5.932-0.411-0.407-0.855-0.859c5.849-5.833 6.907-5.891 7.989-5zM14.849 16.593l5.916-5.921c0.328-0.344 0.875-0.339 1.204 0.005 0.323 0.349 0.291 0.896-0.073 1.197l-6.265 5.5zM15.287 17.521l-1.469 0.317c-0.031 0.005-0.072-0.011-0.088-0.047-0.016-0.032-0.011-0.068 0.016-0.095l0.859-0.859zM11.547 16.907l1.568-1.563 1.172 1.172-2.641 0.567c-0.047 0.011-0.093-0.009-0.115-0.052-0.025-0.041-0.015-0.093 0.016-0.124zM6.688 24.984c-0.057-0.005-0.1-0.057-0.095-0.109 0.005-0.025 0.016-0.047 0.032-0.063h0.005l1.26-1.26 1.631 1.631zM9.921 23.307c-0.124 0.068-0.187 0.209-0.156 0.344l0.271 1.152c0.043 0.167-0.161 0.28-0.281 0.156h-0.005l-1.635-1.636 5.016-5.011 2.427-0.525 1.161 1.167c-1.672 1.468-3.959 2.932-6.797 4.353zM16.959 18.74l-1.12-1.12 6.265-5.5c0.057-0.052 0.109-0.109 0.156-0.167-0.192 1.792-2.703 4.323-5.301 6.787zM21.839 10.125h-0.005c-2.183-2.193 0.901-5.563 3.276-3.584l-2.145 2.152c-0.063 0.061-0.063 0.167 0 0.228l1.661 1.663c-0.932 0.463-2.052 0.276-2.787-0.459zM25.271 10.125c-0.109 0.109-0.229 0.208-0.359 0.291l-1.609-1.609 2.041-2.047c0.885 0.964 0.849 2.443-0.073 3.365zM25.14 8.068c-0.067 0.047-0.093 0.129-0.072 0.208 0.099 0.197 0.072 0.432-0.068 0.599-0.068 0.084-0.052 0.199 0.031 0.265 0.032 0.021 0.068 0.037 0.109 0.037 0.057 0 0.111-0.021 0.141-0.063 0.235-0.281 0.281-0.677 0.12-1.005-0.063-0.083-0.177-0.104-0.261-0.041z"/>
+                    </svg>
+                </div>
+
+                <!-- PHOTOSHOP -->
+
+                <div class="tool-item">
+                    <svg fill="#FFFFFF"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+
+                    <g id="2069a460dcf28295e231f3111e037552">
+
+                    <path display="inline" d="M426.333,0.5H85.667C38.825,0.5,0.5,38.825,0.5,85.667v340.667c0,46.842,38.325,85.167,85.167,85.167
+                            h340.667c46.842,0,85.167-38.325,85.167-85.167V85.667C511.5,38.825,473.175,0.5,426.333,0.5z M245.329,260.524
+                            c-17.736,17.736-45.611,26.065-77.103,26.065c-8.326,0-15.927-0.365-21.72-1.451v91.945h-44.159V136.363
+                            c15.927-2.895,38.009-5.069,68.05-5.069c32.582,0,56.473,6.878,72.039,19.911c14.48,11.947,23.89,31.131,23.89,53.936
+                            C266.325,228.309,259.086,247.492,245.329,260.524z M337.981,380.706c-21.358,0-40.542-5.069-53.574-12.31l8.687-32.216
+                            c10.135,6.154,29.322,12.671,45.249,12.671c19.545,0,28.236-7.964,28.236-19.549c0-11.943-7.239-18.099-28.96-25.7
+                            c-34.391-11.947-48.866-30.769-48.505-51.403c0-31.131,25.7-55.383,66.604-55.383c19.549,0,36.562,5.069,46.695,10.496
+                            l-8.687,31.493c-7.602-4.342-21.721-10.135-37.285-10.135c-15.928,0-24.615,7.602-24.615,18.46c0,11.224,8.326,16.655,30.77,24.618
+                            c31.854,11.582,46.696,27.871,47.058,53.937C409.653,357.539,384.678,380.706,337.981,380.706z M221.8,206.95
+                            c0,28.598-20.273,44.887-53.574,44.887c-9.049,0-16.289-0.362-21.72-1.809v-82.534c4.708-1.085,13.395-2.171,25.704-2.171
+                            C202.979,165.323,221.8,179.803,221.8,206.95z">
+
+                    </path>
+
+                    </g>
+
+                    </svg>
+                </div>
+
+                <!-- GIT -->
+                <div class="tool-item">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 5C7 3.89543 7.89543 3 9 3C10.1046 3 11 3.89543 11 5C11 5.74028 10.5978 6.38663 10 6.73244V14.0396H11.7915C12.8961 14.0396 13.7915 13.1441 13.7915 12.0396V10.7838C13.1823 10.4411 12.7708 9.78837 12.7708 9.03955C12.7708 7.93498 13.6662 7.03955 14.7708 7.03955C15.8753 7.03955 16.7708 7.93498 16.7708 9.03955C16.7708 9.77123 16.3778 10.4111 15.7915 10.7598V12.0396C15.7915 14.2487 14.0006 16.0396 11.7915 16.0396H10V17.2676C10.5978 17.6134 11 18.2597 11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 18.2597 7.4022 17.6134 8 17.2676V6.73244C7.4022 6.38663 7 5.74028 7 5Z" fill="#FFFFFF"/>
+                    </svg>
+                </div>
+
+                <!-- FIGMA -->
+                <div class="tool-item">
+                    <svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g id="SVGRepo_iconCarrier"> <path d="M12 3H9C7.34315 3 6 4.34315 6 6C6 7.65685 7.34315 9 9 9M12 3V9M12 3H15C16.6569 3 18 4.34315 18 6C18 7.65685 16.6569 9 15 9M12 9H9M12 9H15M12 9V15M9 9C7.34315 9 6 10.3431 6 12C6 13.6569 7.34315 15 9 15M15 9C16.6569 9 18 10.3431 18 12C18 13.6569 16.6569 15 15 15C13.3431 15 12 13.6569 12 12C12 10.3431 13.3431 9 15 9ZM12 15H9M12 15V18C12 19.6569 10.6569 21 9 21C7.34315 21 6 19.6569 6 18C6 16.3431 7.34315 15 9 15" stroke="#FFFFFF" stroke-width="0.72" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                    </svg>
+                </div>
+
+                <!-- BOOTSTRAP -->
+                <div class="tool-item">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98488 2C3.61546 2 2.60217 3.19858 2.64753 4.49844C2.69105 5.74725 2.63451 7.36461 2.22732 8.68359C1.81892 10.0064 1.1282 10.8444 0 10.952V12.1666C1.1282 12.2742 1.81892 13.1122 2.22732 14.4351C2.63451 15.754 2.69105 17.3714 2.64753 18.6202C2.60217 19.9199 3.61546 21.1186 4.98508 21.1186H19.0169C20.3864 21.1186 21.3995 19.9201 21.3541 18.6202C21.3106 17.3714 21.3671 15.754 21.7743 14.4351C22.1829 13.1122 22.8718 12.2742 24 12.1666V10.952C22.8718 10.8444 22.1829 10.0064 21.7743 8.68359C21.3671 7.36481 21.3106 5.74725 21.3541 4.49844C21.3995 3.19878 20.3864 2 19.0169 2H4.98468H4.98488ZM16.2712 13.7687C16.2712 15.5586 14.9361 16.6441 12.7206 16.6441H8.94915C8.84127 16.6441 8.7378 16.6012 8.66152 16.5249C8.58523 16.4486 8.54237 16.3452 8.54237 16.2373V6.88136C8.54237 6.77347 8.58523 6.67001 8.66152 6.59372C8.7378 6.51743 8.84127 6.47458 8.94915 6.47458H12.6991C14.5464 6.47458 15.7588 7.47525 15.7588 9.01166C15.7588 10.09 14.9433 11.0555 13.9041 11.2245V11.2809C15.3187 11.4361 16.2712 12.4156 16.2712 13.7687ZM12.3094 7.76407H10.1589V10.8015H11.9701C13.3702 10.8015 14.1423 10.2377 14.1423 9.2299C14.1423 8.28556 13.4784 7.76407 12.3094 7.76407ZM10.1589 12.0068V15.3542H12.3885C13.8462 15.3542 14.6184 14.7692 14.6184 13.6699C14.6184 12.5704 13.8246 12.0066 12.2947 12.0066H10.1589V12.0068Z" fill="#FFFFFF"/>
+                    </svg>
+                </div>
+
+                <!-- MYSQL -->
+                <div class="tool-item">
+                    <svg fill="#FFFFFF" viewBox="0 0 32.00 32.00" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="0.00032">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#FFFFFF" stroke-width="1.472"/>
+                        <g id="SVGRepo_iconCarrier"> <title>mysql</title> <path d="M30.026 15.139c-0.082-0.006-0.177-0.010-0.273-0.010-0.484 0-0.947 0.090-1.373 0.254l0.026-0.009c-0.125 0.050-0.325 0.050-0.342 0.209 0.069 0.066 0.079 0.175 0.137 0.267 0.117 0.198 0.261 0.366 0.429 0.506l0.003 0.003c0.175 0.137 0.35 0.27 0.534 0.387 0.325 0.2 0.694 0.319 1.012 0.52 0.181 0.117 0.366 0.266 0.55 0.391 0.091 0.062 0.15 0.175 0.267 0.215v-0.025c-0.057-0.075-0.075-0.184-0.131-0.267-0.084-0.084-0.167-0.159-0.25-0.241-0.248-0.325-0.535-0.603-0.857-0.835l-0.012-0.008c-0.267-0.182-0.852-0.437-0.962-0.744l-0.016-0.018c0.218-0.031 0.412-0.077 0.599-0.139l-0.024 0.007c0.284-0.075 0.544-0.059 0.837-0.132 0.132-0.034 0.266-0.075 0.4-0.117v-0.075c-0.15-0.15-0.262-0.354-0.417-0.494-0.409-0.36-0.86-0.698-1.335-1.002l-0.045-0.027c-0.262-0.167-0.595-0.275-0.871-0.417-0.1-0.050-0.267-0.075-0.325-0.159-0.13-0.185-0.245-0.397-0.336-0.621l-0.008-0.022q-0.368-0.714-0.684-1.453c-0.144-0.383-0.287-0.697-0.448-1.001l0.023 0.047c-0.786-1.319-1.881-2.379-3.188-3.102l-0.043-0.022c-0.309-0.153-0.668-0.272-1.045-0.339l-0.025-0.004c-0.209-0.010-0.417-0.025-0.625-0.034-0.146-0.094-0.272-0.19-0.39-0.296l0.003 0.003c-0.475-0.3-1.704-0.95-2.054-0.090-0.225 0.542 0.334 1.077 0.527 1.352 0.154 0.183 0.294 0.388 0.415 0.605l0.010 0.020c0.059 0.145 0.075 0.294 0.134 0.445 0.145 0.452 0.292 0.823 0.459 1.182l-0.026-0.062c0.099 0.199 0.202 0.368 0.317 0.528l-0.008-0.012c0.067 0.091 0.182 0.134 0.209 0.284-0.086 0.181-0.153 0.391-0.19 0.61l-0.002 0.014c-0.108 0.332-0.171 0.715-0.171 1.112 0 0.621 0.153 1.206 0.423 1.72l-0.010-0.020c0.134 0.207 0.452 0.667 0.878 0.491 0.375-0.15 0.292-0.625 0.4-1.043 0.025-0.1 0.009-0.166 0.060-0.234v0.019c0.117 0.235 0.235 0.459 0.342 0.694 0.302 0.435 0.661 0.805 1.071 1.11l0.013 0.009c0.2 0.15 0.359 0.41 0.609 0.502v-0.025h-0.019c-0.057-0.062-0.12-0.117-0.189-0.164l-0.004-0.002c-0.155-0.152-0.299-0.316-0.429-0.489l-0.008-0.011c-0.326-0.44-0.636-0.938-0.905-1.461l-0.029-0.061c-0.137-0.262-0.252-0.545-0.362-0.804-0.050-0.1-0.050-0.25-0.134-0.3-0.148 0.166-0.281 0.351-0.392 0.55l-0.008 0.016c-0.128 0.373-0.212 0.804-0.234 1.251l-0 0.011c-0.034 0.009-0.017 0-0.034 0.018-0.267-0.065-0.359-0.342-0.459-0.575-0.136-0.366-0.215-0.79-0.215-1.231 0-0.356 0.051-0.7 0.147-1.025l-0.006 0.026c0.059-0.175 0.309-0.727 0.209-0.895-0.052-0.159-0.217-0.25-0.309-0.379-0.109-0.154-0.209-0.329-0.292-0.514l-0.008-0.020c-0.2-0.467-0.3-0.985-0.517-1.452-0.131-0.244-0.269-0.454-0.424-0.65l0.007 0.009c-0.165-0.191-0.317-0.404-0.449-0.63l-0.011-0.020c-0.041-0.091-0.1-0.242-0.034-0.342 0.012-0.058 0.058-0.103 0.117-0.112l0.001-0c0.11-0.090 0.419 0.027 0.527 0.077 0.317 0.12 0.59 0.261 0.843 0.427l-0.016-0.010c0.117 0.082 0.244 0.241 0.394 0.282h0.175c0.267 0.059 0.569 0.018 0.819 0.091 0.459 0.155 0.856 0.349 1.223 0.587l-0.021-0.013c1.104 0.713 1.988 1.677 2.586 2.816l0.020 0.041c0.1 0.192 0.144 0.369 0.235 0.569 0.175 0.412 0.391 0.829 0.569 1.227 0.169 0.428 0.369 0.798 0.607 1.139l-0.012-0.018c0.125 0.175 0.627 0.266 0.852 0.357 0.237 0.083 0.427 0.162 0.611 0.251l-0.037-0.016c0.287 0.175 0.567 0.375 0.837 0.567 0.137 0.095 0.554 0.304 0.579 0.472zM18.302 22.452c0 0.015 0.001 0.032 0.001 0.049 0 0.558-0.249 1.057-0.643 1.393l-0.003 0.002c-0.432 0.352-0.989 0.566-1.596 0.566-0.047 0-0.094-0.001-0.14-0.004l0.006 0c-0.739-0.010-1.419-0.25-1.976-0.651l0.010 0.007 0.296-0.595c0.429 0.24 0.939 0.389 1.481 0.41l0.006 0c0.027 0.002 0.058 0.003 0.090 0.003 0.332 0 0.641-0.104 0.894-0.281l-0.005 0.003c0.229-0.174 0.375-0.446 0.375-0.752 0-0.006-0-0.011-0-0.017v0.001c0-0.412-0.287-0.762-0.81-1.056-0.485-0.266-1.453-0.821-1.453-0.821-0.478-0.296-0.791-0.817-0.791-1.411 0-0.021 0-0.042 0.001-0.063l-0 0.003c-0.001-0.019-0.001-0.041-0.001-0.063 0-0.515 0.227-0.977 0.586-1.291l0.002-0.002c0.382-0.324 0.881-0.521 1.426-0.521 0.035 0 0.069 0.001 0.103 0.002l-0.005-0c0.009-0 0.020-0 0.031-0 0.639 0 1.234 0.191 1.73 0.52l-0.012-0.007-0.266 0.595c-0.391-0.176-0.847-0.282-1.327-0.287l-0.002-0c-0.024-0.002-0.051-0.003-0.079-0.003-0.28 0-0.538 0.098-0.74 0.262l0.002-0.002c-0.189 0.157-0.309 0.392-0.31 0.655v0c0 0.41 0.292 0.762 0.832 1.062 0.491 0.269 1.483 0.837 1.483 0.837 0.488 0.287 0.811 0.809 0.811 1.407 0 0.018-0 0.037-0.001 0.055l0-0.003zM20.374 22.983c-0.273-0.545-0.432-1.187-0.432-1.866 0-0.107 0.004-0.213 0.012-0.317l-0.001 0.014q0-2.611 1.587-2.612c0.026-0.002 0.057-0.003 0.089-0.003 0.475 0 0.892 0.248 1.129 0.622l0.003 0.005c0.271 0.542 0.43 1.182 0.43 1.858 0 0.104-0.004 0.207-0.011 0.309l0.001-0.014q0 2.632-1.587 2.634c-0.027 0.002-0.058 0.003-0.089 0.003-0.475 0-0.893-0.248-1.13-0.622l-0.003-0.005zM24.488 24.535l-1.27-0.625c0.116-0.097 0.22-0.199 0.316-0.309l0.003-0.003c0.513-0.692 0.821-1.563 0.821-2.505 0-0.109-0.004-0.217-0.012-0.324l0.001 0.014q0-3.43-2.693-3.432c-0.040-0.002-0.087-0.003-0.134-0.003-0.767 0-1.456 0.337-1.925 0.872l-0.002 0.003c-0.511 0.692-0.818 1.562-0.818 2.504 0 0.106 0.004 0.211 0.012 0.315l-0.001-0.014c-0.009 0.101-0.014 0.219-0.014 0.338 0 0.874 0.274 1.684 0.74 2.349l-0.009-0.013c0.449 0.478 1.086 0.776 1.791 0.776 0.066 0 0.131-0.003 0.195-0.008l-0.009 0.001c0.009 0 0.021 0 0.032 0 0.311 0 0.612-0.045 0.897-0.128l-0.022 0.006 1.656 0.965 0.45-0.777zM28.636 24.366h-3.287v-6.91h1.106v6.061h2.181zM13.235 19.268c-0.287 2.084-0.944 3.965-1.905 5.65l0.040-0.077c-0.385 0.741-1.113 1.257-1.968 1.34l-0.010 0.001c-0.259-0.014-0.5-0.076-0.719-0.177l0.012 0.005v-0.617c0.137 0.021 0.295 0.033 0.456 0.033 0.009 0 0.018-0 0.028-0h-0.001c0.016 0.001 0.034 0.001 0.052 0.001 0.289 0 0.554-0.105 0.758-0.28l-0.002 0.001c0.22-0.181 0.361-0.451 0.369-0.755l0-0.001c-0.053-0.438-0.154-0.837-0.299-1.214l0.012 0.034-1.267-3.944h1.137l0.909 2.949c0.162 0.416 0.256 0.898 0.256 1.401 0 0.001 0 0.002 0 0.002v-0c0.482-1.262 0.848-2.734 1.034-4.261l0.009-0.092zM8.215 24.366h-1.158q-0.049-2.761-0.337-5.511h-0.010l-1.762 5.511h-0.881l-1.75-5.511h-0.012q-0.205 2.751-0.244 5.511h-1.056q0.103-3.685 0.512-6.911h1.437l1.668 5.079h0.010l1.683-5.079h1.368q0.454 3.777 0.535 6.911zM21.505 7.879c-0.002 0-0.005-0-0.008-0-0.119 0-0.234 0.015-0.344 0.043l0.010-0.002v0.016h0.017c0.086 0.128 0.174 0.239 0.269 0.343l-0.002-0.002c0.067 0.134 0.125 0.267 0.192 0.4l0.017-0.019c0.109-0.086 0.178-0.218 0.178-0.366 0-0.018-0.001-0.035-0.003-0.053l0 0.002c-0.050-0.059-0.057-0.117-0.1-0.175-0.050-0.084-0.157-0.125-0.225-0.191z"/> </g>
+                        </svg>
+                </div>
+            </div>
+            
         </section>
 
         <section id="portfolio" class="contents">
@@ -122,68 +294,519 @@
 
             <div class="project-container">
                 <div class="projects container">
-                    <div class="row">
-                        <div class="col-sm ms-3 me-3 project-item" >
-                            <img src="projects/proj1.png" class="card-img-top img-fluid" id="proj-img" alt="Enrollment System">
-                            <div class="card-body">
+                    <div class="d-flex flex-wrap">
+                        <div class="m-2 project-item d-flex justify-content-between flex-column" data-bs-toggle="modal" data-bs-target="#project1" style="cursor: pointer;">
+                            <div class="card-head">
+                                <div class="image-container">
+                                <!-- <img src="projects/proj1-img1.png" class="card-img-top img-fluid" style="height: 300px; object-fit: cover;" id="proj-img" alt="Enrollment System"> -->
+                                <img src="svg/placeholder.svg" class="card-img-top img-fluid" style="height: 300px; object-fit: contain;" id="proj-img" alt="Enrollment System">
+                                </div>
+                            </div>
+                            <div class="card-body mt-auto text-center p-2">
                                 <h5 class="title">Enrollment System for Freshmen</h5>
-                                <h6 class="sub-title mb-2">November 2022</h6>
-                                <p class="card-text" style="text-align: justify;">An enrollment system made using Python during our first semester. It can create, read, update, delete, and save data but this doesn’t have any database applied.</p>
                             </div>
                         </div>
 
-                        <div class="col-sm ms-3 me-3 project-item">
-                            <img src="projects/proj2.png" class="card-img-top img-fluid" id="proj-img" alt="Ropersors Java Game">
-                            <div class="card-body">
+                        <div class="modal fade" id="project1" tabindex="-1" aria-labelledby="project1Modal" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content p-2" style="background-color: #11001C;">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color: red; color: white;" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body modall">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div id="carouselExampleIndicators" class="carousel slide">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" style="background-color: #3c1351;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                        <button type="button" style="background-color: #3c1351;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" style="background-color: #3c1351;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="projects/proj1-img1.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="projects/proj1-img2.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="projects/proj1-img3.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 d-flex flex-column justify-content-between">
+                                                <div>
+                                                    <div class="d-flex flex-row">
+                                                        <h1 class="modal-title fs-5" id="project1Modal">Enrollment System for Freshmen</h1>
+                                                        <a href="https://github.com/Hyudz/Final-Project---11-26-2022" target="_blank" style="width: 24px; height: 24px;" title="View Repository"> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / External_Link"> <path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></a>
+                                                    </div>
+                                                    <h6 class="sub-title mb-2">November 2022</h6>
+                                                    <p class="card-text" style="text-align: justify;">An enrollment system made using Python during our first semester. It can create, read, update, delete, and save data but this doesn’t have any database applied.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-2 project-item d-flex justify-content-between flex-column" data-bs-toggle="modal" data-bs-target="#project2" style="cursor: pointer;">
+                            <div class="card-head">
+                                <div class="image-container">
+                                    <img src="logos/ropersors.png" class="card-img-top img-fluid" style="height: 300px; object-fit: contain;" id="proj-img" alt="Ropersors Java Game">
+                                </div>
+                            </div>
+                            <div class="card-body mt-auto text-center p-2">
                                 <h5 class="title">Ropersors</h5>
-                                <h6 class="sub-title mb-2">March 2023 - April 2023</h6>
-                                <p class="card-text mb-3" style="text-align: justify;">A RPS-based game using Java that incorporates elements such as fire, water, and flora(nature) to add another layer of fun to the game. The players will be granted 10 lives at the start of each game, and it will then be decremented depending on the outcomes of each round. For each round, the players will choose among the objects (R,P,S). Then the program will randomly affix a randomized element to imbue their chosen object to raise the odds while preserving the fairness of the game.</p>
                             </div>
                         </div>
 
-                        <div class="col-sm ms-3 me-3 project-item">
-                            <img src="projects/pitique.png" class="card-img-top img-fluid" id="proj-img" alt="Pitique">
-                            <div class="card-body">
+                        <div class="modal fade" id="project2" tabindex="-1" aria-labelledby="project2Modal" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content p-2" style="background-color: #11001C;">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color: red; color: white;" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body modall2">
+                                        <div class="row">   
+                                            <div class="col-md-6">
+                                                <div id="carousel2" class="carousel slide">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="projects/proj2-img1.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="projects/proj2-img2.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="projects/proj2-img3.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden" style="background-color: black;">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 d-flex flex-column justify-content-between">
+                                                <div>
+                                                    <div class="d-flex flex-row">
+                                                        <h1 class="modal-title fs-5" id="project2Modal">Ropersors</h1>
+                                                        <a href="https://github.com/Hyudz/Ropersors" target="_blank" style="width: 24px; height: 24px;" title="View Repository"> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / External_Link"> <path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></a>
+                                                    </div>
+                                                    <h6 class="sub-title mb-2">March 2023 - April 2023</h6>
+                                                    <p class="card-text" style="text-align: justify;">A RPS-based game using Java that incorporates elements such as fire, water, and flora(nature) to add another layer of fun to the game. The players will be granted 10 lives at the start of each game, and it will then be decremented depending on the outcomes of each round. For each round, the players will choose among the objects (R,P,S). Then the program will randomly affix a randomized element to imbue their chosen object to raise the odds while preserving the fairness of the game.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-2 project-item d-flex justify-content-between flex-column" data-bs-toggle="modal" data-bs-target="#project3" style="cursor: pointer;">
+                            <div class="card-head">
+                                <div class="image-container">
+                                    <img src="logos/pitique.png" class="card-img-top img-fluid" style="height: 300px; object-fit: contain;" id="proj-img" alt="Afterworlds Main Menu">
+                                </div>
+                            </div>
+                            <div class="card-body text-center p-2">
                                 <h5 class="title">Pitique</h5>
-                                <h6 class="sub-title mb-2">March 2023 - April 2023</h6>
-                                <p class="card-text" style="text-align: justify;">Pitique is a a photography website consisting of various pictures, ranging from the day-to-day college life to the mesmerizing sceneries of our nature. Our team aims to create a hub for photography enthusiasts and for others to gain an interest and appreciate the art of photography.</p>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
+                        <div class="modal fade" id="project3" tabindex="-1" aria-labelledby="project3Modal" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content p-2" style="background-color: #11001C;">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color: red; color: white;" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body modall3">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div id="carousel3" class="carousel slide">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" style="background-color: #3c1351;" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                        <button type="button" style="background-color: #3c1351;" data-bs-target="#carousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" style="background-color: #3c1351;" data-bs-target="#carousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="projects/pitique.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="projects/pitique2.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="projects/pitique3.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
 
-                        <div class=" col-sm ms-3 me-3 mt-3 mb-3 project-item">
-                            <img src="projects/rps mobile.jpg" class="card-img-top game img-fluid" id="proj-img" alt="Ropersors Mobile">
-                            <div class="card-body">
+                                            <div class="col-md-6 d-flex flex-column justify-content-between">
+                                                <div>
+                                                    <div class="d-flex flex-row">
+                                                        <h1 class="modal-title fs-5" id="project3Modal">Pitique</h1>
+                                                        <a href="https://github.com/Hyudz/Pitique" target="_blank" style="width: 24px; height: 24px;" title="View Repository"> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / External_Link"> <path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></a>
+                                                    </div>
+                                                    <h6 class="sub-title mb-2">March 2023 - April 2023</h6>
+                                                    <p class="card-text" style="text-align: justify;">Pitique is a a photography website consisting of various pictures, ranging from the day-to-day college life to the mesmerizing sceneries of our nature. Our team aims to create a hub for photography enthusiasts and for others to gain an interest and appreciate the art of photography.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-2 project-item d-flex justify-content-between flex-column" data-bs-toggle="modal" data-bs-target="#project4" style="cursor: pointer;">
+                            <div class="card-head">
+                                <div class="image-container">
+                                    <img src="logos/ropersors.png" class="card-img-top img-fluid" style="height: 300px; object-fit: contain;" id="proj-img" alt="Ropersors Mobile">
+                                </div>
+                            </div>
+                            <div class="card-body text-center p-2">
                                 <h5 class="title">Ropersors Mobile</h5>
-                                <h6 class="sub-title mb-2">May 2023</h6>
-                                <p class="card-text" style="text-align: justify;">A mobile version of Ropersors Java Game</p>
                             </div>
                         </div>
 
-                        <div class=" col-sm ms-3 me-3 mt-3 mb-3 project-item">
-                            <center>
-                                <img src="projects/afterworld.webp" class="card-img-top img-fluid" id="proj-img" alt="Afterworlds Title Screen" style="width: 18vmin;">
-                                <img src="projects/afterworld.png" class="card-img-top img-fluid" id="proj-img" alt="Afterworlds Main Menu" style="width: 18vmin;">
-                            </center>
-                            <div class="card-body">
+                        <div class="modal fade" id="project4" tabindex="-1" aria-labelledby="project4Modal" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content p-2" style="background-color: #11001C;">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color: red; color: white;" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body modall4">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div id="carousel4" class="carousel slide">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="projects/rps mobile.jpg" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <!-- <div class="carousel-item">
+                                                            <img src="projects/rps mobile.jpg" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="projects/rps mobile.jpg" class="d-block w-100" alt="...">
+                                                        </div> -->
+                                                    </div>
+                                                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden" style="background-color: black;">Next</span>
+                                                    </button> -->
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 d-flex flex-column justify-content-between">
+                                                <div>
+                                                    <div class="d-flex flex-row">
+                                                        <h1 class="modal-title fs-5" id="project4Modal">Ropersors Mobile</h1>
+                                                        <a href="https://github.com/Hyudz/Ropersors_Mobile" target="_blank" style="width: 24px; height: 24px;" title="View Repository"> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / External_Link"> <path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></a>
+                                                    </div>
+                                                    <h6 class="sub-title mb-2">May 2023</h6>
+                                                    <p class="card-text" style="text-align: justify;">A mobile version of Ropersors Java Game</p>
+                                                </div>
+                                                <a class="btn btn-primary mt-auto" href="https://github.com/Hyudz/Ropersors_Mobile" target="_blank" role="button">View Repository</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-2 project-item d-flex justify-content-between flex-column" data-bs-toggle="modal" data-bs-target="#project5" style="cursor: pointer;">
+                            <div class="card-head">
+                                <div class="image-container">
+                                    <img src="logos/afterworlds.png" class="card-img-top img-fluid" style="height: 300px; object-fit: contain;" id="proj-img" alt="Afterworlds Main Menu">
+                                </div>
+                            </div>
+                            <div class="card-body text-center p-2">
                                 <h5 class="title">Afterworlds</h5>
-                                <h6 class="sub-title mb-2">September 2023 - November 2023</h6>
-                                <p class="card-text mb-3" style="text-align: justify;">Afterworlds is a game that would really test your skills in maneuvering the map, attacking enemies, and dodging the endless stream of enemies while the difficulty progresses as long as you stay alive. This game was developed through Unity and uses SQLite for its database management. This game features progressing difficulty level, beautiful art style, weapon shop and inventory, and player and leaderboards management.</p>
                             </div>
                         </div>
 
-                        <div class=" col-sm ms-3 me-3 mt-3 mb-3 project-item">
-                            <img src="projects/marketplace.png" class="card-img-top img-fluid" id="proj-img" alt="Marketplace">
-                            <div class="card-body">
+                        <div class="modal fade" id="project5" tabindex="-1" aria-labelledby="project5Modal" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content p-2" style="background-color: #11001C;">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color: red; color: white;" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body modall5">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div id="carousel5" class="carousel slide">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carousel5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carousel5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="projects/afterworld.webp" class="d-block w-100" style="height: 400px; object-fit: contain;" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="projects/afterworld.png" class="d-block w-100" style="height: 400px; object-fit: contain;" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="projects/afterworld3.png" class="d-block w-100" style="height: 400px; object-fit: contain;" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden" style="background-color: black;">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 d-flex flex-column justify-content-between">
+                                                <div>
+                                                    <div class="d-flex flex-row">
+                                                        <h1 class="modal-title fs-5" id="project5Modal">Afterworlds</h1>
+                                                        <a href="https://github.com/Hyudz/Afterworlds" target="_blank" style="width: 24px; height: 24px;" title="View Repository"> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / External_Link"> <path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></a>
+                                                    </div>
+                                                    <h6 class="sub-title mb-2">September 2023 - November 2023</h6>
+                                                    <p class="card-text" style="text-align: justify;">Afterworlds is a game that would really test your skills in maneuvering the map, attacking enemies, and dodging the endless stream of enemies while the difficulty progresses as long as you stay alive. This game was developed through Unity and uses SQLite for its database management. This game features progressing difficulty level, beautiful art style, weapon shop and inventory, and player and leaderboards management.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-2 project-item d-flex justify-content-between flex-column" data-bs-toggle="modal" data-bs-target="#project6" style="cursor: pointer;">
+                            <div class="card-header">
+                                <div class="image-container">
+                                    <img src="logos/marketplace.png" class="card-img-top img-fluid" style="height: 300px; object-fit: contain;" id="proj-img" alt="Marketplace">
+                                </div>
+                            </div>
+                            <div class="card-body text-center p-2">
                                 <h5 class="title">PHINMA UPang Marketplace</h5>
-                                <h6 class="sub-title mb-2">December 2023 - Present</h6>
-                                <p class="card-text" style="text-align: justify;">UPang Marketplace aims to provide help to all Students and Employees to sell their personal belongings that relates on University Essentials such as old books, uniform, and any other tools that related to their courses to help the buyer reuse that item and the same goes with the seller helps with their finances.</p>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="project6" tabindex="-1" aria-labelledby="project6Modal" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content p-2" style="background-color: #11001C;">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color: red; color: white;" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body modall6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div id="carousel6" class="carousel slide">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carousel6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carousel6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carousel6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="projects/marketplace.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="projects/marketplace2.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="projects/marketplace3.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel6" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel6" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden" style="background-color: black;">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 d-flex flex-column justify-content-between">
+                                                <div>
+                                                    <div class="d-flex flex-row">
+                                                        <h1 class="modal-title fs-5" id="project6Modal">PHINMA UPang-Marketplace</h1>
+                                                        <a href="https://github.com/Hyudz/UPang-Marketplace" target="_blank" style="width: 24px; height: 24px;" title="View Repository"> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / External_Link"> <path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></a>
+                                                    </div>
+                                                    <h6 class="sub-title mb-2">December 2023 - March 2024</h6>
+                                                    <p class="card-text" style="text-align: justify;">UPang Marketplace aims to provide help to all Students and Employees to sell their personal belongings that relates on University Essentials such as old books, uniform, and any other tools that related to their courses to help the buyer reuse that item and the same goes with the seller helps with their finances.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-2 project-item d-flex justify-content-between flex-column" data-bs-toggle="modal" data-bs-target="#project7" style="cursor: pointer;">
+                            <div class="card-header">
+                                <div class="image-container">
+                                    <img src="logos/marketplace.png" class="card-img-top img-fluid" style="height: 300px; object-fit: contain;" id="proj-img" alt="Marketplace Mobile">
+                                </div>
+                            </div>
+                            <div class="card-body text-center p-2">
+                                <h5 class="title">UPang-Marketplace Mobile</h5>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="project7" tabindex="-1" aria-labelledby="project7Modal" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content p-2" style="background-color: #11001C;">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color: red; color: white;" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body modall7">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div id="carousel7" class="carousel slide">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carousel7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carousel7" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carousel7" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="projects/upmobile1.png" class="d-block w-100" style=" height: 300px; object-fit: contain;" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg" class="d-block w-100" style=" height: 300px; object-fit: contain;" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg" class="d-block w-100" style=" height: 300px; object-fit: contain;" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel7" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel7" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden" style="background-color: black;">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 d-flex flex-column justify-content-between">
+                                                <div>
+                                                    <div class="d-flex flex-row">
+                                                        <h1 class="modal-title fs-5" id="project7Modal">UPang Marketplace Mobile</h1>
+                                                        <a href="https://github.com/Hyudz/UPang-Marketplace-Mobile" target="_blank" style="width: 24px; height: 24px;" title="View Repository"> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / External_Link"> <path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></a>
+                                                    </div>
+                                                    <h6 class="sub-title mb-2">December 2023 - March 2024</h6>
+                                                    <p class="card-text" style="text-align: justify;"> An android marketplace for PHINMA UPang Students made using Kotlin and implementing API's using retrofit to communicate to the server side.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-2 project-item d-flex justify-content-between flex-column" data-bs-toggle="modal" data-bs-target="#project8" style="cursor: pointer;">
+                            <div class="card-header">
+                                <div class="image-container">
+                                    <img src="svg/placeholder.svg" class="card-img-top img-fluid" style="height: 300px; object-fit: contain;" id="proj-img" alt="Typeswift">
+                                </div>
+                            </div>
+                            <div class="card-body text-center p-2">
+                                <h5 class="title">Typeswift</h5>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="project8" tabindex="-1" aria-labelledby="project8Modal" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content p-2" style="background-color: #11001C;">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color: red; color: white;" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body modall8">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div id="carousel8" class="carousel slide">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carousel8" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carousel8" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carousel8" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg" class="d-block w-100" style=" height: 300px; object-fit: contain;" alt="...">
+                                                        </div>
+                                                        <!-- <div class="carousel-item">
+                                                            <img src="projects/marketplace2.png" class="d-block w-100" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="projects/marketplace3.png" class="d-block w-100" alt="...">
+                                                        </div> -->
+                                                    </div>
+                                                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel8" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel8" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden" style="background-color: black;">Next</span>
+                                                    </button> -->
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 d-flex flex-column justify-content-between">
+                                                <div>
+                                                    <div class="d-flex flex-row">
+                                                        <h1 class="modal-title fs-5" id="project7Modal">Ropersors</h1>
+                                                        <a href="https://github.com/Hyudz/TypeSwift" target="_blank" style="width: 24px; height: 24px; display: none;" title="View Repository"> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / External_Link"> <path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></a>
+                                                    </div>
+                                                    <h6 class="sub-title mb-2">March 2024 - Present</h6>
+                                                    <p class="card-text" style="text-align: justify;">TypeSwift is a typing game where sets of falling words need to be avoided by typing the exact same word before they fall down. The game starts at an easy level and increases in difficulty as it progresses. As the difficulty increases, the speed of the words will also increase, and more words will be added to fall. The game will be over when many words have fallen.  This game was created using the MERN Tech Stack and is still under development, so stay tuned!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -218,7 +841,7 @@
                     </div>
 
                     <div class="contact-info-item">
-                        <a href="https://github.com/Hyudz" target="_blank">
+                        <a  href="https://github.com/Hyudz" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" style="fill: rgb(215, 215, 215);" height="16" width="16.5" viewBox="0 0 496 512">
                                 <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
                             </svg>
@@ -229,6 +852,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
 </body>
 </html>

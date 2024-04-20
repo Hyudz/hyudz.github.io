@@ -1,25 +1,44 @@
-function Awake() {
-    window.alert("Welcome to my website!");
-}
+document.addEventListener("DOMContentLoaded", function() {
+    var modal = document.getElementById("myModal");
+    var buttons = document.querySelectorAll(".btn-primary"); // Select all buttons with class "btn-primary"
+    var title = document.getElementById("title");
+    var description = document.getElementById("description");
+    var span = document.getElementsByClassName("close")[0];
+    // Loop through all buttons and add click event listener
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].onclick = function() {
+            modal.style.display = "block";
+        }
 
-function fun1(section){
-
-    document.getElementById("nav1").style.color = "#FFFFFF";
-    document.getElementById("nav2").style.color = "#FFFFFF";
-    document.getElementById("nav3").style.color = "#FFFFFF";
-    document.getElementById("nav4").style.color = "#FFFFFF";
-    document.getElementById("nav5").style.color = "#FFFFFF";
-    
-    if(section=="#home") {
-        document.getElementById("nav1").style.color = "#5A2600";
-    } else if (section=="#services") {
-        document.getElementById("nav2").style.color = "#5A2600";
-    } else if (section=="#portfolio") {
-        document.getElementById("nav3").style.color = "#5A2600";
-    } else if (section=="#aboutMe") {
-        document.getElementById("nav4").style.color = "#5A2600";
-    } else if (section=="#contact") {
-        document.getElementById("nav5").style.color = "#5A2600";
+        if (i == 0) {
+            title.innerHTML = "Project 1";
+            description.innerHTML = "This is a description for project 1";
+        } else if (i == 1) {
+            title.innerHTML = "Project 2";
+            description.innerHTML = "This is a description for project 2";
+        } else if (i == 2) {
+            title.innerHTML = "Project 3";
+            description.innerHTML = "This is a description for project 3";
+        } else if (i == 3) {
+            title.innerHTML = "Project 4";
+            description.innerHTML = "This is a description for project 4";
+        } else if (i == 4) {
+            title.innerHTML = "Project 5";
+            description.innerHTML = "This is a description for project 5";
+        } else if (i == 5) {
+            title.innerHTML = "Project 6";
+            description.innerHTML = "This is a description for project 6";
+        } else if (i == 6) {
+            title.innerHTML = "Project 7";
+            description.innerHTML = "This is a description for project 7";
+        }
     }
-    window.location.href = section;
-}
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    });

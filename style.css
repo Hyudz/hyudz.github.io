@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-#remarks1,#remarks2 {
+#remarks1,#remarks2, #remarks3, #remarks4, #remarks5, #remarks6, #remarks7 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
-    color: black;
+    color: white;
     text-transform: uppercase;
 }
 
@@ -18,6 +18,10 @@ p {
     top: -15px; 
     display: inline-block;
     padding: 0 10px; 
+}
+
+.short-desc {
+    padding: 10px;
 }
 
 #proj-img {
@@ -145,7 +149,8 @@ div h4 {
 
 #proj-img:hover {
     filter: grayscale(0%);
-    transition: filter 0.2s ease-in;
+    transition: filter 0.2s ease-in, transform 0.2s ease-in;
+    /* transform: rotate(30deg) scale(1.1); */
 }
 
 .service {
@@ -178,11 +183,6 @@ div h4 {
     width: 18rem; 
     border: solid 3px white; 
     border-radius: 30px;
-}
-
-div svg {
-    margin-left: 35%;
-    padding-top: 10%;
 }
 
 #forFooter {
@@ -222,4 +222,81 @@ body {
 
 .title, .sub-title {
     color: #CFA3EA;
+}
+
+.language1 {
+    background-color: #CFA3EA;
+}
+
+span {
+    color: white;
+}
+
+.modall {
+    background: url('svg/python.svg');
+    background-repeat: no-repeat;
+    background-position: 140% 50%;
+    background-size: 50%;
+}
+
+.modall2 {
+    background: url('svg/java.svg');
+    background-repeat: no-repeat;
+    background-position: 110% 100%;
+    background-size: 25%;
+}
+
+.modall3 {
+    background: url('svg/html5.svg');
+    background-repeat: no-repeat;
+    background-position: 110% 100%;
+    background-size: 25%;
+}
+
+.modall4, .modall7 {
+    background: url('svg/kotlin.svg');
+    background-repeat: no-repeat;
+    background-position: 110% 100%;
+    background-size: 25%;
+}
+
+.modall5 {
+    background: url('svg/unity.svg');
+    background-repeat: no-repeat;
+    background-position: 110% 100%;
+    background-size: 25%;
+}
+
+.modall6 {
+    background: url('svg/laravel.svg');
+    background-repeat: no-repeat;
+    background-position: 110% 100%;
+    background-size: 25%;
+}
+
+.modall8 {
+    background: url('svg/react.svg');
+    background-repeat: no-repeat;
+    background-position: 110% 100%;
+    background-size: 25%;
+}
+
+.modal-title {
+    color: #CFA3EA;
+}
+
+.btn-close {
+    color: #2196F3;
+}
+
+.tool-item {
+    border: solid 2px white;
+    border-radius: 5px;
+    width: 82px;
+    height: 82px;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
 }
