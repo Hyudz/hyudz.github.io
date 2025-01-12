@@ -12,10 +12,12 @@ li {
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     text-align: justify;
     color: white;
 }
+
+
 
 #remarks2 {
     position: relative;
@@ -205,7 +207,9 @@ body {
     background-color: #11001C;
 }
 
-
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
 
 .project {
     margin-left: 20px;
@@ -225,6 +229,7 @@ body {
 
 .title, .sub-title {
     color: #CFA3EA;
+    font-weight: bold;
 }
 
 .language1 {
@@ -278,7 +283,7 @@ span {
 }
 
 .modall8 {
-    background: url('svg/react.svg');
+    background: url('svg/laravel.svg');
     background-repeat: no-repeat;
     background-position: 110% 100%;
     background-size: 25%;
@@ -286,6 +291,7 @@ span {
 
 .modal-title {
     color: #CFA3EA;
+    font-weight: bold;
 }
 
 .btn-close {
