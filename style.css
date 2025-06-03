@@ -156,6 +156,7 @@ div h4 {
 #proj-img:hover {
     filter: grayscale(0%);
     transition: filter 0.2s ease-in, transform 0.2s ease-in;
+    transform: scale(1.05);
     /* transform: rotate(30deg) scale(1.1); */
 }
 
@@ -181,7 +182,7 @@ div h4 {
 }
 
 .service {
-    color: #CFA3EA;
+    color: #081C6E;
 }
 
 
@@ -204,11 +205,13 @@ div h4 {
 
 body {
     overflow-x: hidden;
-    background-color: #11001C;
+    /* background-color: #11001C; */
+    background: rgb(16,60,231);
+    background: linear-gradient(137deg, rgba(16,60,231,1) 0%, rgba(100,233,255,1) 100%);
 }
 
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins', sans-serif;
 }
 
 .project {
@@ -220,7 +223,7 @@ body {
 }
 
 .card-text {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .desc {
@@ -228,7 +231,7 @@ body {
 }
 
 .title, .sub-title {
-    color: #CFA3EA;
+    color: #081C6E ;
     font-weight: bold;
 }
 
@@ -290,8 +293,12 @@ span {
 }
 
 .modal-title {
-    color: #CFA3EA;
+    color: #081C6E ;
     font-weight: bold;
+}
+
+.modal-content {
+    color: gray;
 }
 
 .btn-close {
